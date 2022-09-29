@@ -11,6 +11,11 @@
   display: flex;
   justify-content: space-between;
 }
+.flex-bt-c {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .flex-ar-c {
   display: flex;
   justify-content: space-around;
@@ -20,6 +25,12 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+.ma {
+  margin: 0 auto;
+}
+.bb {
+  border-bottom: 0.1rem solid #e99287;
 }
 .header {
   max-width: 90%;
@@ -78,6 +89,7 @@ body p {
 }
 #name {
   width: 200px;
+  text-align: left;
 }
 #hello {
   width: 100%;
@@ -86,16 +98,25 @@ body p {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin: 0 auto;
+  max-width: 100%;
 }
-#hello .text-presentation h1 {
-  font-size: 3rem;
+#hello h1 {
+  font-size: 4rem;
+  font-weight: 500;
 }
-#hello .text-presentation h2 {
+#hello h2 {
   font-size: 2rem;
   font-weight: 400;
+  color: #4d5bce;
+  margin-bottom: 40px;
 }
-#hello .text-presentation p {
+#hello p {
   margin-bottom: 10px;
+  line-height: 1.8;
+}
+.page-hello {
+  border-bottom: 0.1rem solid #e99287;
 }
 #github-project {
   display: flex;
@@ -105,4 +126,43 @@ body p {
 #github-project p {
   margin-right: 10px;
   font-size: 1.2rem;
+}
+#github-project #var {
+  color: #4d5bce;
+}
+#github-project #gt-link {
+  color: #3c9d93;
+}
+#github-project #link-presentation {
+  color: #fea55f;
+}
+.box-presentation {
+  width: 500px;
+  height: 460px;
+  background-image: linear-gradient(#3c9d93, #4d5bce);
+  border-radius: 20px;
+  border: 0.5px solid black;
+}
+.circle {
+  position: relative;
+  width: 13px;
+  height: 13px;
+  background-color: #011221;
+  border-radius: 50%;
+}
+#top-left {
+  top: 11px;
+  left: 9px;
+}
+#top-right {
+  top: -3px;
+  left: 95%;
+}
+#bottom-left {
+  top: 89%;
+  left: 10px;
+}
+#bottom-right {
+  top: 86%;
+  left: 95.3%;
 }

@@ -24,34 +24,93 @@ body {
   }
 }
 
-#name{
+#name {
   width: 200px;
+  text-align: left;
 }
 
-#hello{
+#hello {
   .container;
   .flex-ar-c;
+  .ma;
+  max-width: 100%;
 
-  & .text-presentation h1{
-    font-size: 3rem;
+  & h1 {
+    font-size: 4rem;
+    font-weight: 500;
   }
 
-  & .text-presentation h2{
+  & h2 {
     font-size: 2rem;
     font-weight: 400;
+    color: @gd-final;
+    .mb(40px);
   }
 
-  & .text-presentation p{
+  & p {
     .mb(10px);
+    line-height: 1.8;
   }
 }
 
-#github-project{
+.page-hello{
+  .bb;
+}
+
+#github-project {
   .flex-c;
   .mt(30px);
 
-  & p{
+  & p {
     .mr(10px);
     font-size: 1.2rem;
   }
+
+  & #var {
+    color: @gd-final;
+  }
+
+  & #gt-link {
+    color: @gd-in;
+  }
+
+  & #link-presentation {
+    color: #colors[secondary];
+  }
+}
+
+.box-presentation {
+  width: 500px;
+  height: 460px;
+  background-image: linear-gradient(@gd-in, @gd-final);
+  border-radius: 20px;
+  border: 0.5px solid black;
+}
+
+.circle {
+  position: relative;
+  width: 13px;
+  height: 13px;
+  background-color: #colors[bg];
+  border-radius: 50%;
+}
+
+#top-left {
+  top: 11px;
+  left: 9px;
+}
+
+#top-right {
+  top: -3px;
+  left: 95%;
+}
+
+#bottom-left {
+  top: 89%;
+  left: 10px;
+}
+
+#bottom-right {
+  top: 86%;
+  left: 95.3%;
 }

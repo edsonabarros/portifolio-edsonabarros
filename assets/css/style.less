@@ -1,0 +1,57 @@
+@import "mixins";
+@import "variables";
+
+//GENERAL
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #colors[bg];
+  font-family: @font-f;
+  color: #colors[primary];
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  p {
+    margin: 5px;
+  }
+}
+
+#name{
+  width: 200px;
+}
+
+#hello{
+  .container;
+  .flex-ar-c;
+
+  & .text-presentation h1{
+    font-size: 3rem;
+  }
+
+  & .text-presentation h2{
+    font-size: 2rem;
+    font-weight: 400;
+  }
+
+  & .text-presentation p{
+    .mb(10px);
+  }
+}
+
+#github-project{
+  .flex-c;
+  .mt(30px);
+
+  & p{
+    .mr(10px);
+    font-size: 1.2rem;
+  }
+}

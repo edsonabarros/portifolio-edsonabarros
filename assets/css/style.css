@@ -1,0 +1,108 @@
+.container {
+  width: 100%;
+  height: 850px;
+  max-width: 1200px;
+}
+.flex-c {
+  display: flex;
+  align-items: center;
+}
+.flex-bt {
+  display: flex;
+  justify-content: space-between;
+}
+.flex-ar-c {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.flex-ar-c {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.header {
+  max-width: 90%;
+  display: flex;
+  border: 0.1rem solid #1e2d3d;
+  border-radius: 5px;
+  margin: 20px auto 0;
+}
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.header-ul {
+  display: flex;
+}
+.header-li {
+  width: 130px;
+  list-style: none;
+  border-right: 0.1rem solid #1e2d3d;
+  padding: 12px;
+  margin-left: 5px;
+  text-align: center;
+}
+.header-li:not(#name,.page-hello):hover {
+  color: #fea55f;
+}
+.li-contact {
+  border-left: 0.1rem solid #1e2d3d;
+  width: 130px;
+  list-style: none;
+  padding: 12px;
+  margin-left: 5px;
+  text-align: center;
+}
+.li-contact:hover {
+  color: #fea55f;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  background-color: #011221;
+  font-family: "Fira Code", monospace;
+  color: #e5e9f0;
+}
+body a {
+  color: inherit;
+  text-decoration: none;
+}
+body p {
+  margin: 5px;
+}
+#name {
+  width: 200px;
+}
+#hello {
+  width: 100%;
+  height: 850px;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#hello .text-presentation h1 {
+  font-size: 3rem;
+}
+#hello .text-presentation h2 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+#hello .text-presentation p {
+  margin-bottom: 10px;
+}
+#github-project {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+#github-project p {
+  margin-right: 10px;
+  font-size: 1.2rem;
+}

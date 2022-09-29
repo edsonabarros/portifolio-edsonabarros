@@ -6,7 +6,18 @@
   max-width: 1200px;
 }
 
+.wdt {
+  width: 100%;
+  max-width: 1200px;
+}
+
 .flex-c{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-c-c{
   display: flex;
   align-items: center;
 }
@@ -57,11 +68,12 @@
 }
 
 .header {
-  max-width: 90%;
+  max-width: 1200px;
   display: flex;
   border: 0.1rem solid #colors[bd];
   border-radius: 5px;
   margin: 20px auto 0;
+  height: 45px;
 
   &-nav {
     .flex-bt;
@@ -73,7 +85,7 @@
   }
 
   &-li {
-    width: 130px;
+    min-width: 130px;
     list-style: none;
     border-right: 0.1rem solid #colors[bd];
     padding: 12px;

@@ -3,7 +3,16 @@
   height: 850px;
   max-width: 1200px;
 }
+.wdt {
+  width: 100%;
+  max-width: 1200px;
+}
 .flex-c {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex-c-c {
   display: flex;
   align-items: center;
 }
@@ -33,11 +42,12 @@
   border-bottom: 0.1rem solid #e99287;
 }
 .header {
-  max-width: 90%;
+  max-width: 1200px;
   display: flex;
-  border: 0.1rem solid #1e2d3d;
+  border: 0.1rem solid #364758;
   border-radius: 5px;
   margin: 20px auto 0;
+  height: 45px;
 }
 .header-nav {
   display: flex;
@@ -48,9 +58,9 @@
   display: flex;
 }
 .header-li {
-  width: 130px;
+  min-width: 130px;
   list-style: none;
-  border-right: 0.1rem solid #1e2d3d;
+  border-right: 0.1rem solid #364758;
   padding: 12px;
   margin-left: 5px;
   text-align: center;
@@ -59,7 +69,7 @@
   color: #fea55f;
 }
 .li-contact {
-  border-left: 0.1rem solid #1e2d3d;
+  border-left: 0.1rem solid #364758;
   width: 130px;
   list-style: none;
   padding: 12px;
@@ -92,12 +102,9 @@ body p {
   text-align: left;
 }
 #hello {
-  width: 100%;
-  height: 850px;
-  max-width: 1200px;
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  justify-content: center;
   margin: 0 auto;
   max-width: 100%;
 }
@@ -115,16 +122,18 @@ body p {
   margin-bottom: 10px;
   line-height: 1.8;
 }
+#hello .text-presentation {
+  max-width: 650px;
+  margin-right: 20px;
+}
 .page-hello {
   border-bottom: 0.1rem solid #e99287;
 }
 #github-project {
   display: flex;
   align-items: center;
-  margin-top: 30px;
 }
 #github-project p {
-  margin-right: 10px;
   font-size: 1.2rem;
 }
 #github-project #var {
@@ -165,4 +174,74 @@ body p {
 #bottom-right {
   top: 86%;
   left: 95.3%;
+}
+#sobre-mim {
+  max-width: 1200px;
+  border-bottom: 0.1rem solid #364758;
+  border-right: 0.1rem solid #364758;
+  border-left: 0.1rem solid #364758;
+  border-radius: 5px;
+  height: 659px;
+  margin-bottom: 30px;
+  margin: 0 auto;
+}
+#sobre-mim .header {
+  border: none;
+  width: 100%;
+  max-width: 1200px;
+  border-top: 0.1rem solid #364758;
+  border-bottom: 0.1rem solid #364758;
+}
+#sobre-mim .header .header-li {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#sobre-mim .header .header-li:not(#name) {
+  width: 220px;
+}
+#sobre-mim .header .btn {
+  width: 22px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #011221;
+  border-color: #011221;
+  color: #e5e9f0;
+}
+#sobre-mim .header .btn:hover {
+  background-color: #4d5bce;
+}
+#sobre-mim img {
+  width: 18px;
+  height: 18px;
+}
+.left-nav {
+  width: 200px;
+  height: 613px;
+  list-style: none;
+  border-right: 0.1rem solid #364758;
+  padding: 12px;
+  margin-left: 5px;
+  text-align: justify;
+  margin-bottom: 30px;
+}
+.left-nav ul {
+  width: 500px;
+}
+.left-nav li {
+  list-style: none;
+  align-items: center;
+  color: #909090;
+  margin-bottom: 5px;
+}
+.left-nav li:hover {
+  color: #e5e9f0;
+}
+#li-contact-sobre {
+  border-left: 0.1rem solid #364758;
+  width: 130px;
+  list-style: none;
+  padding: 12px;
+  margin-left: 5px;
+  text-align: center;
 }

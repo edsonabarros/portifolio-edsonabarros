@@ -30,8 +30,7 @@ body {
 }
 
 #hello {
-  .container;
-  .flex-ar-c;
+  .flex-c;
   .ma;
   max-width: 100%;
 
@@ -51,18 +50,21 @@ body {
     .mb(10px);
     line-height: 1.8;
   }
+
+  & .text-presentation {
+    max-width: 650px;
+    margin-right: 20px;
+  }
 }
 
-.page-hello{
+.page-hello {
   .bb;
 }
 
 #github-project {
-  .flex-c;
-  .mt(30px);
+  .flex-c-c;
 
   & p {
-    .mr(10px);
     font-size: 1.2rem;
   }
 
@@ -113,4 +115,85 @@ body {
 #bottom-right {
   top: 86%;
   left: 95.3%;
+}
+
+#sobre-mim {
+  max-width: 1200px;
+  border-bottom: 0.1rem solid #colors[bd];
+  border-right: 0.1rem solid #colors[bd];
+  border-left: 0.1rem solid #colors[bd];
+  border-radius: 5px;
+  height: 659px;
+  .mb(30px);
+  .ma;
+
+  & .header {
+    border: none;
+    .wdt;
+    border-top: 0.1rem solid #colors[bd];
+    border-bottom: 0.1rem solid #colors[bd];
+  }
+
+  & .header .header-li {
+    .flex-ar-c;
+  }
+
+  & .header .header-li:not(#name) {
+    width: 220px;
+  }
+
+  & .header .btn {
+    width: 22px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #colors[bg];
+    border-color: #colors[bg];
+    color: #colors[primary];
+  }
+
+  & .header .btn:hover {
+    background-color: @gd-final;
+  }
+
+  & .header li {
+  }
+
+  & img {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.left-nav {
+  width: 200px;
+  height: 613px;
+  list-style: none;
+  border-right: 0.1rem solid #colors[bd];
+  padding: 12px;
+  margin-left: 5px;
+  text-align: justify;
+  .mb(30px);
+
+  & ul {
+    width: 500px;
+  }
+
+  & li {
+    list-style: none;
+    align-items: center;
+    color: @text-nav;
+    .mb(5px);
+  }
+  & li:hover {
+    color: @hov-nav;
+  }
+}
+
+#li-contact-sobre {
+  border-left: 0.1rem solid #colors[bd];
+  width: 130px;
+  list-style: none;
+  padding: 12px;
+  margin-left: 5px;
+  text-align: center;
 }

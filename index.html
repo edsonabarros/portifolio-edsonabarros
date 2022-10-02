@@ -65,74 +65,81 @@
                             <p>_sobre-mim</p>
                         </li>
                         <li class="header-li" id="sobre">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
-                            <a href="#hello">sobre.html</a>
-                            <button type="button" ondblclick="esconderBotao('sobre')" class="btn-x">x</button>
+                            <img  class="img-header" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+                            <a>sobre.html</a>
+                            <button type="button" onclick="esconderArquivo('sobre')" class="btn-x">x</button>
                         </li>
                         <li class="header-li" id="habilidades">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
-                            <a href="#">habilidades.css</a>
-                            <button type="button" ondblclick="esconderBotao('habilidades')" class="btn-x">x</button>
+                            <img  class="img-header" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+                            <a>habilidades.css</a>
+                            <button type="button" onclick="esconderArquivo('habilidades')" class="btn-x">x</button>
                         </li>
                         <li class="header-li" id="educacao">
-                            <img
+                            <img class="img-header"
                                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
-                            <a href="#">educação.js</a>
-                            <button type="button" ondblclick="esconderBotao('educacao')" class="btn-x">x</button>
+                            <a>educação.js</a>
+                            <button type="button" onclick="esconderArquivo('educacao')" class="btn-x">x</button>
                         </li>
                     </ul>
                 </nav>
             </div>
             <div class="conteudo">
-            <div class="left-nav">
-                <nav>
-                    <ul>
-                        <li>
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
-                            <a href=""> bio.html</a>
-                        </li>
-                        <li>
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
-                            <a href=""> habilidades.css</a>
-                        </li>
-                        <li>
-                            <img
-                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
-                            <a href=""> educação.js</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <div id="p-r">
-                <p class="p-opc">
-                    05 ...<br>
-                    06 <span>&lttitle></span>Edson Barros<span>&lt/title></span><br>
-                    07 <span>&ltlink rel="stylesheet" href="habilidades.css"&gt</span> <br>
-                    08 <span>&lt/head&gt</span><br>
-                    09 <span>&ltbody&gt</span><br>
-                    10 <span>&ltmain&gt</span> <br>
-                    11 <span>&ltsection class="apresentacao"&gt</span> <br></p>
-                <p class="p-principal">
-                    12 <span>&lth1&gt</span> Edson Barros <span>&lt/h1&gt</span><br>
-                    13 <span>&ltp&gt</span> Olá! Eu me chamo Edson de Andrade Barros, tenho 23 anos e sou apaixonado por  <br>
-                    14 tecnologia! Estou no último semestre da faculdade e focando os estudos em melhorar <br>
-                    15 minhas habilidades no front-end e back-end! <span>&lt/p&gt</span><br>
-                    16 <span>&ltp&gt</span> Para o front-end, estou estudando CSS (utilizando o pré-processador LESS) <br>
-                    17 e Javascript, já pensando em aprender um framework no futuro, como React ou Angular!<span>&lt/p&gt</span><br>
-                    18 <span>&ltp&gt</span> No back-end, estou estudando Java com Spring Framework<span>&lt/p&gt</span><br>
-                </p>
-                <p class="p-opc">
-                    19 <span>&lt/section&gt</span> <br>
-                    20 <span>&lt/main&gt</span><br>                   
-                    21 <span>&ltfooter&gt</span><br>
-                    22 <span>&ltp&gt</span> Obrigago por acessar!<span>&lt/p&gt</span><br>                    
-                    23 <span>&lt/footer&gt</span><br>
-                    24 <span>&lt/body&gt</span><br>
-                    25 <span>&lt/html&gt</span><br>
-                </p>
+                <div class="left-nav">
+                    <nav>
+                        <ul>
+                            <li>
+                                <img class="img-nav"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+                                    <button type="button" onclick="abrirArquivo('sobre')" class="btn-nav-l">sobre.html</button>
 
+                            </li>
+                            <li class="teste">
+                                <img class="img-nav" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+                                <button type="button" onclick="abrirArquivo('habilidades')" class="btn-nav-l">habilidades.css</button>
+
+                            </li>
+                            <li>
+                                <img class="img-nav" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+                                    <button type="button" onclick="abrirArquivo('educacao')" class="btn-nav-l">educação.js</button>
+
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div id="p-r">
+                    <p class="p-opc">
+                        05 ...<br>
+                        06 <span>&lttitle></span>Edson Barros<span>&lt/title></span><br>
+                        07 <span>&ltlink rel="stylesheet" href="habilidades.css"&gt</span> <br>
+                        08 <span>&lt/head&gt</span><br>
+                        09 <span>&ltbody&gt</span><br>
+                        10 <span>&ltmain&gt</span> <br>
+                        11 <span>&ltsection class="apresentacao"&gt</span> <br></p>
+                    <p class="p-principal">
+                        12 <span>&lth1&gt</span> Edson Barros <span>&lt/h1&gt</span><br>
+                        13 <span>&ltp&gt</span> Olá! Eu me chamo Edson de Andrade Barros, tenho 23 anos e sou apaixonado
+                        por <br>
+                        14 tecnologia! Estou no último semestre da faculdade e focando os estudos em melhorar <br>
+                        15 minhas habilidades no front-end e back-end! <span>&lt/p&gt</span><br>
+                        16 <span>&ltp&gt</span> Para o front-end, estou estudando CSS (utilizando o pré-processador
+                        LESS) <br>
+                        17 e Javascript, já pensando em aprender um framework no futuro, como React ou
+                        Angular!<span>&lt/p&gt</span><br>
+                        18 <span>&ltp&gt</span> No back-end, estou estudando Java com Spring
+                        Framework<span>&lt/p&gt</span><br>
+                    </p>
+                    <p class="p-opc">
+                        19 <span>&lt/section&gt</span> <br>
+                        20 <span>&lt/main&gt</span><br>
+                        21 <span>&ltfooter&gt</span><br>
+                        22 <span>&ltp&gt</span> Obrigago por acessar!<span>&lt/p&gt</span><br>
+                        23 <span>&lt/footer&gt</span><br>
+                        24 <span>&lt/body&gt</span><br>
+                        25 <span>&lt/html&gt</span><br>
+                    </p>
+
+                </div>
             </div>
-        </div>
         </section>
         <!-- PROJETOS -->
         <!-- CONTATOS -->
@@ -140,7 +147,8 @@
     <footer></footer>
 
 
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/sobre.js">
+    </script>
 </body>
 
 </html>

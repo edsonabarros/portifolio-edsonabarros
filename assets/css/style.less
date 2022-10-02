@@ -143,7 +143,7 @@ body {
     width: 220px;
   }
 
-  img {
+  .img-header {
     width: 18px;
     height: 18px;
   }
@@ -159,7 +159,7 @@ body {
   .btn-x:hover{
     background-color: @bg + 10;
   }
-
+  
   .conteudo{
     display: flex;
   }
@@ -208,9 +208,29 @@ body {
     color: @hov-nav;
   }
 
+  .btn-nav-l{
+    background-color: transparent;
+    border: none;
+    color: @bg + 90;
+    cursor: pointer;
+    padding-bottom: 3px;
+    .mt(5px);
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  .btn-nav-l:hover{
+    color: @primary + 55;
+  }
 
-
+  .img-nav{
+    width: 15px;
+    height: 15px;
+  }
+  
 }
+
+
 
 #li-contact-sobre {
   border-left: 0.1rem solid @bd;

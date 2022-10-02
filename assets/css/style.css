@@ -201,7 +201,7 @@ body p {
 #sobre-mim .header-li:not(#name) {
   width: 220px;
 }
-#sobre-mim img {
+#sobre-mim .img-header {
   width: 18px;
   height: 18px;
 }
@@ -255,6 +255,23 @@ body p {
 }
 .left-nav li:hover {
   color: #e5e9f0;
+}
+.left-nav .btn-nav-l {
+  background-color: transparent;
+  border: none;
+  color: #5b6c7b;
+  cursor: pointer;
+  padding-bottom: 3px;
+  margin-top: 5px;
+  font-size: 1rem;
+  text-align: center;
+}
+.left-nav .btn-nav-l:hover {
+  color: #ffffff;
+}
+.left-nav .img-nav {
+  width: 15px;
+  height: 15px;
 }
 #li-contact-sobre {
   border-left: 0.1rem solid #364758;

@@ -65,7 +65,7 @@
   margin-left: 5px;
   text-align: center;
 }
-.header-li:not(#name,.page-hello):hover {
+.header-li:not(#name, .page-hello):hover {
   color: #fea55f;
 }
 .li-contact {
@@ -176,6 +176,7 @@ body p {
   left: 95.3%;
 }
 #sobre-mim {
+  position: relative;
   max-width: 1200px;
   border-bottom: 0.1rem solid #364758;
   border-right: 0.1rem solid #364758;
@@ -192,28 +193,44 @@ body p {
   border-top: 0.1rem solid #364758;
   border-bottom: 0.1rem solid #364758;
 }
-#sobre-mim .header .header-li {
+#sobre-mim .header-li {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-#sobre-mim .header .header-li:not(#name) {
+#sobre-mim .header-li:not(#name) {
   width: 220px;
-}
-#sobre-mim .header .btn {
-  width: 22px;
-  border-radius: 50%;
-  text-align: center;
-  background-color: #011221;
-  border-color: #011221;
-  color: #e5e9f0;
-}
-#sobre-mim .header .btn:hover {
-  background-color: #4d5bce;
 }
 #sobre-mim img {
   width: 18px;
   height: 18px;
+}
+#sobre-mim .btn-x {
+  width: 21px;
+  height: 20px;
+  background-color: transparent;
+  border: none;
+  color: #e5e9f0;
+  cursor: pointer;
+}
+#sobre-mim .btn-x:hover {
+  background-color: #0b1c2b;
+}
+#sobre-mim #p-r {
+  position: relative;
+  left: 20%;
+  bottom: 93%;
+}
+#sobre-mim .p-opc {
+  opacity: 40%;
+  margin-top: -3px;
+  margin-bottom: -3px;
+}
+#sobre-mim .p-principal {
+  opacity: 80%;
+}
+#sobre-mim span {
+  color: #fea55f;
 }
 .left-nav {
   width: 200px;

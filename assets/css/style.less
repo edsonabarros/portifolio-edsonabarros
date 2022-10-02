@@ -10,9 +10,9 @@
 
 body {
   min-height: 100vh;
-  background-color: #colors[bg];
+  background-color: @bg;
   font-family: @font-f;
-  color: #colors[primary];
+  color: @primary;
 
   a {
     color: inherit;
@@ -34,24 +34,24 @@ body {
   .ma;
   max-width: 100%;
 
-  & h1 {
+  h1 {
     font-size: 4rem;
     font-weight: 500;
   }
 
-  & h2 {
+  h2 {
     font-size: 2rem;
     font-weight: 400;
     color: @gd-final;
     .mb(40px);
   }
 
-  & p {
+  p {
     .mb(10px);
     line-height: 1.8;
   }
 
-  & .text-presentation {
+  .text-presentation {
     max-width: 650px;
     margin-right: 20px;
   }
@@ -64,20 +64,20 @@ body {
 #github-project {
   .flex-c-c;
 
-  & p {
+  p {
     font-size: 1.2rem;
   }
 
-  & #var {
+  #var {
     color: @gd-final;
   }
 
-  & #gt-link {
+  #gt-link {
     color: @gd-in;
   }
 
-  & #link-presentation {
-    color: #colors[secondary];
+  #link-presentation {
+    color: @secondary;
   }
 }
 
@@ -93,7 +93,7 @@ body {
   position: relative;
   width: 13px;
   height: 13px;
-  background-color: #colors[bg];
+  background-color: @bg;
   border-radius: 50%;
 }
 
@@ -118,49 +118,66 @@ body {
 }
 
 #sobre-mim {
+  position: relative;
   max-width: 1200px;
-  border-bottom: 0.1rem solid #colors[bd];
-  border-right: 0.1rem solid #colors[bd];
-  border-left: 0.1rem solid #colors[bd];
+  border-bottom: 0.1rem solid @bd;
+  border-right: 0.1rem solid @bd;
+  border-left: 0.1rem solid @bd;
   border-radius: 5px;
   height: 659px;
   .mb(30px);
   .ma;
 
-  & .header {
+  .header {
     border: none;
     .wdt;
-    border-top: 0.1rem solid #colors[bd];
-    border-bottom: 0.1rem solid #colors[bd];
+    border-top: 0.1rem solid @bd;
+    border-bottom: 0.1rem solid @bd;
   }
 
-  & .header .header-li {
+  .header-li {
     .flex-ar-c;
   }
 
-  & .header .header-li:not(#name) {
+  .header-li:not(#name) {
     width: 220px;
   }
 
-  & .header .btn {
-    width: 22px;
-    border-radius: 50%;
-    text-align: center;
-    background-color: #colors[bg];
-    border-color: #colors[bg];
-    color: #colors[primary];
-  }
-
-  & .header .btn:hover {
-    background-color: @gd-final;
-  }
-
-  & .header li {
-  }
-
-  & img {
+  img {
     width: 18px;
     height: 18px;
+  }
+
+  .btn-x{
+    width: 21px;
+    height: 20px;
+    background-color: transparent;
+    border: none;
+    color: @primary;
+    cursor: pointer;
+  }
+  .btn-x:hover{
+    background-color: @bg + 10;
+  }
+
+  #p-r{
+    position: relative;
+    left: 20%;
+    bottom: 93%;
+  }
+
+  .p-opc{
+    opacity: 40%; 
+    margin-top: -3px;
+    margin-bottom: -3px;
+  }
+
+  .p-principal{
+    opacity: 80%; 
+  }
+
+  span{
+    color: @secondary;
   }
 }
 
@@ -168,29 +185,32 @@ body {
   width: 200px;
   height: 613px;
   list-style: none;
-  border-right: 0.1rem solid #colors[bd];
+  border-right: 0.1rem solid @bd;
   padding: 12px;
   margin-left: 5px;
   text-align: justify;
   .mb(30px);
 
-  & ul {
+  ul {
     width: 500px;
   }
 
-  & li {
+  li {
     list-style: none;
     align-items: center;
     color: @text-nav;
     .mb(5px);
   }
-  & li:hover {
+  li:hover {
     color: @hov-nav;
   }
+
+
+
 }
 
 #li-contact-sobre {
-  border-left: 0.1rem solid #colors[bd];
+  border-left: 0.1rem solid @bd;
   width: 130px;
   list-style: none;
   padding: 12px;

@@ -216,10 +216,12 @@ body p {
 #sobre-mim .btn-x:hover {
   background-color: #0b1c2b;
 }
+#sobre-mim .conteudo {
+  display: flex;
+}
 #sobre-mim #p-r {
-  position: relative;
-  left: 20%;
-  bottom: 93%;
+  margin-left: 20px;
+  margin-top: 20px;
 }
 #sobre-mim .p-opc {
   opacity: 40%;

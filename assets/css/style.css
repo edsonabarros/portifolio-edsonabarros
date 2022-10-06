@@ -219,9 +219,20 @@ body p {
 #sobre-mim .conteudo {
   display: flex;
 }
-#sobre-mim #p-r {
+#sobre-mim #p-sobre {
   margin-left: 20px;
   margin-top: 20px;
+  display: none;
+}
+#sobre-mim #p-habilidades {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+#sobre-mim #p-habilidades span {
+  color: #3c9d93;
+}
+#sobre-mim #p-habilidades .css {
+  color: #fea55f;
 }
 #sobre-mim .p-opc {
   opacity: 40%;

@@ -222,7 +222,6 @@ body p {
 #sobre-mim #p-sobre {
   margin-left: 20px;
   margin-top: 20px;
-  display: none;
 }
 #sobre-mim #p-educacao {
   margin-left: 20px;
@@ -232,6 +231,7 @@ body p {
 #sobre-mim #p-habilidades {
   margin-left: 20px;
   margin-top: 20px;
+  display: none;
 }
 #sobre-mim .p-opc {
   opacity: 40%;
@@ -293,4 +293,14 @@ body p {
   padding: 12px;
   margin-left: 5px;
   text-align: center;
+}
+.btn-ide {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #e5e9f0;
+  font-family: inherit;
+}
+.btn-ide:hover {
+  color: #fea55f;
 }

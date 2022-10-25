@@ -148,7 +148,7 @@ body {
     height: 18px;
   }
 
-  .btn-x{
+  .btn-x {
     width: 21px;
     height: 20px;
     background-color: transparent;
@@ -156,50 +156,47 @@ body {
     color: @primary;
     cursor: pointer;
   }
-  .btn-x:hover{
+  .btn-x:hover {
     background-color: @bg + 10;
   }
-  
-  .conteudo{
+
+  .conteudo {
     display: flex;
   }
 
-  #p-sobre{
+  #p-sobre {
+    .ml(20px);
+    .mt(20px);
+
+  }
+
+  #p-educacao {
     .ml(20px);
     .mt(20px);
     display: none;
-  } 
+  }
 
-  #p-educacao{
+  #p-habilidades {
     .ml(20px);
     .mt(20px);
     display: none;
+  }
 
-  }  
-
-
-
-  #p-habilidades{
-    .ml(20px);
-    .mt(20px);
-  } 
-
-
-  .p-opc{
-    opacity: 40%; 
+  .p-opc {
+    opacity: 40%;
     margin-top: -3px;
     margin-bottom: -3px;
   }
 
-  .p-principal{
-    opacity: 80%; 
+  .p-principal {
+    opacity: 80%;
   }
 
-  span{
+  span {
     color: @secondary;
   }
 
-  .css{
+  .css {
     color: @gd-in;
   }
 }
@@ -228,7 +225,7 @@ body {
     color: @hov-nav;
   }
 
-  .btn-nav-l{
+  .btn-nav-l {
     background-color: transparent;
     border: none;
     color: @bg + 90;
@@ -238,19 +235,16 @@ body {
     font-size: 1rem;
     text-align: center;
   }
-  
-  .btn-nav-l:hover{
+
+  .btn-nav-l:hover {
     color: @primary + 55;
   }
 
-  .img-nav{
+  .img-nav {
     width: 15px;
     height: 15px;
   }
-  
 }
-
-
 
 #li-contact-sobre {
   border-left: 0.1rem solid @bd;
@@ -259,4 +253,16 @@ body {
   padding: 12px;
   margin-left: 5px;
   text-align: center;
+}
+
+.btn-ide{
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: @primary ;
+  font-family: inherit;
+}
+
+.btn-ide:hover{
+  color: @secondary;
 }

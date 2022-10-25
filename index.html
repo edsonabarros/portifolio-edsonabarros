@@ -66,18 +66,20 @@
                         </li>
                         <li class="header-li" id="sobre">
                             <img  class="img-header" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
-                            <a>sobre.html</a>
-                            <button type="button" onclick="esconderArquivo('sobre','p-r')" class="btn-x">x</button>
-                        </li>
-                        <li class="header-li" id="habilidades">
-                            <img  class="img-header" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
-                            <a>educação.css</a>
-                            <button type="button" onclick="esconderArquivo('habilidades')" class="btn-x">x</button>
+                            <button type="button" onclick="abrirArquivo('sobre','p-sobre', 'p-educacao', 'p-habilidades')" class="btn-ide">sobre.html</button>
+                            <button type="button" onclick="esconderArquivo('sobre','p-sobre','p-educacao')" class="btn-x">x</button>
                         </li>
                         <li class="header-li" id="educacao">
+                            <img  class="img-header" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+
+
+                            <button type="button" onclick="abrirArquivo('educacao', 'p-educacao', 'p-habilidades', 'p-sobre')" class="btn-ide">educação.css</button>
+                            <button type="button" onclick="esconderArquivo('educacao','p-educacao','p-habilidades')" class="btn-x">x</button>
+                        </li>
+                        <li class="header-li" id="habilidades">
                             <img class="img-header" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
-                            <a>habilidades.js</a>
-                            <button type="button" onclick="esconderArquivo('educacao')" class="btn-x">x</button>
+                            <button type="button" onclick="abrirArquivo('habilidades', 'p-habilidades', 'p-educacao', 'p-sobre')" class="btn-ide">habilidades.js</button>
+                            <button type="button" onclick="esconderArquivo('habilidades','p-habilidades', 'p-educacao')" class="btn-x">x</button>
                         </li>
                     </ul>
                 </nav>
@@ -89,17 +91,17 @@
                             <li>
                                 <img class="img-nav"
                                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
-                                    <button type="button" onclick="abrirArquivo('sobre','p-r')" class="btn-nav-l">sobre.html</button>
+                                    <button type="button" onclick="abrirArquivo('sobre','p-sobre', 'p-educacao', 'p-habilidades')" class="btn-nav-l">sobre.html</button>
 
                             </li>
                             <li>
                                 <img class="img-nav" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
-                                <button type="button" onclick="abrirArquivo('habilidades')" class="btn-nav-l">educação.css</button>
+                                <button type="button" onclick="abrirArquivo('habilidades', 'p-habilidades', 'p-educacao', 'p-sobre')" class="btn-nav-l">educação.css</button>
 
                             </li>
                             <li>
                                 <img class="img-nav" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
-                                    <button type="button" onclick="abrirArquivo('educacao')" class="btn-nav-l">habilidades.js</button>
+                                    <button type="button" onclick="abrirArquivo('educacao', 'p-educacao', 'p-habilidades', 'p-sobre')" class="btn-nav-l">habilidades.js</button>
 
                             </li>
                         </ul>

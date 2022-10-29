@@ -327,41 +327,11 @@ body p {
 .card {
   width: 300px;
   height: 400px;
-  background: #333;
-  border-radius: 10px;
-  outline: 1px solid rgba(255, 255, 255, 0.5);
-  outline-offset: -8px;
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
-  position: relative;
-  overflow: hidden;
-}
-.card-image {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0.6;
-  transition: 0.75s;
-}
-.card:hover {
-  transform: scale(1.15);
-}
-.card-title {
-  position: absolute;
-  left: 15px;
-  bottom: 15px;
-  font-size: 20px;
-  text-shadow: 2px 2px black;
-}
-.carde {
-  width: 300px;
-  height: 400px;
   position: relative;
   overflow: hidden;
   border-radius: 15px;
 }
-.carde img {
+.card img {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -369,7 +339,7 @@ body p {
   filter: 0.4s;
   object-fit: cover;
 }
-.carde input[type="checkbox"] {
+.card input[type="checkbox"] {
   position: absolute;
   font-family: "Font Awesome 5 Free";
   width: 40px;
@@ -389,10 +359,10 @@ body p {
   transition: transform 0.4s;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.238);
 }
-.carde input[type="checkbox"]:checked {
+.card input[type="checkbox"]:checked {
   translate: -460%;
 }
-.carde input[type="checkbox"]::before {
+.card input[type="checkbox"]::before {
   content: "\f129";
   font-family: "Font Awesome 5 Free";
   position: absolute;
@@ -400,22 +370,22 @@ body p {
   font-weight: 700;
   font-size: 1em;
 }
-.carde input[type="checkbox"]:checked ~ img {
+.card input[type="checkbox"]:checked ~ img {
   transform: scale(1.2) rotate(-20deg);
   filter: blur(10px);
 }
-.carde input[type="checkbox"]:checked::before {
+.card input[type="checkbox"]:checked::before {
   content: '\f2ea';
   font-weight: 900;
 }
-.carde .git {
+.card .git {
   position: absolute;
   bottom: 15px;
   right: 20px;
   font-size: xx-large;
   z-index: 2;
 }
-.carde .play {
+.card .play {
   position: absolute;
   bottom: 15px;
   right: 70px;
@@ -436,7 +406,7 @@ body p {
   transform: translate(100%);
   transition: translate 0.4s;
 }
-.carde input[type="checkbox"]:checked ~ .side {
+.card input[type="checkbox"]:checked ~ .side {
   transform: translate(0%);
 }
 .side h3 {
@@ -447,4 +417,25 @@ body p {
   color: #ffffff;
   margin-left: 15px;
   font-size: 0.8em;
+}
+#contato {
+  width: 100%;
+  height: 500px;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#contato h3 {
+  font-size: 2rem;
+  margin-bottom: 60px;
+}
+.texto {
+  max-width: 500px;
+}
+.info-contato {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1200px;
 }

@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edson Barros</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/d6d99848bc.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -64,22 +65,20 @@
                         <li class="header-li" id="name">
                             <p>_sobre-mim</p>
                         </li>
-                        <li class="header-li" id="sobre">
+                        <li class="header-li escondido" id="sobre">
                             <img  class="img-header" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
                             <button type="button" onclick="abrirArquivo('sobre','p-sobre', 'p-educacao', 'p-habilidades')" class="btn-ide">sobre.html</button>
                             <button type="button" onclick="esconderArquivo('sobre','p-sobre','p-educacao')" class="btn-x">x</button>
                         </li>
-                        <li class="header-li" id="educacao">
+                        <li class="header-li escondido" id="educacao">
                             <img  class="img-header" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
-
-
                             <button type="button" onclick="abrirArquivo('educacao', 'p-educacao', 'p-habilidades', 'p-sobre')" class="btn-ide">educação.css</button>
                             <button type="button" onclick="esconderArquivo('educacao','p-educacao','p-habilidades')" class="btn-x">x</button>
                         </li>
-                        <li class="header-li" id="habilidades">
+                        <li class="header-li " id="habilidades">
                             <img class="img-header" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
                             <button type="button" onclick="abrirArquivo('habilidades', 'p-habilidades', 'p-educacao', 'p-sobre')" class="btn-ide">habilidades.js</button>
-                            <button type="button" onclick="esconderArquivo('habilidades','p-habilidades', 'p-educacao')" class="btn-x">x</button>
+                            <button type="button" onclick="esconderArquivo('habilidades','p-habilidades','p-sobre')" class="btn-x">x</button>
                         </li>
                     </ul>
                 </nav>
@@ -92,17 +91,14 @@
                                 <img class="img-nav"
                                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
                                     <button type="button" onclick="abrirArquivo('sobre','p-sobre', 'p-educacao', 'p-habilidades')" class="btn-nav-l">sobre.html</button>
-
                             </li>
                             <li>
                                 <img class="img-nav" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
-                                <button type="button" onclick="abrirArquivo('habilidades', 'p-habilidades', 'p-educacao', 'p-sobre')" class="btn-nav-l">educação.css</button>
-
+                                <button type="button" onclick="abrirArquivo('educacao', 'p-educacao', 'p-habilidades', 'p-sobre')" class="btn-nav-l">educação.css</button>
                             </li>
                             <li>
                                 <img class="img-nav" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
-                                    <button type="button" onclick="abrirArquivo('educacao', 'p-educacao', 'p-habilidades', 'p-sobre')" class="btn-nav-l">habilidades.js</button>
-
+                                    <button type="button" onclick="abrirArquivo('habilidades', 'p-habilidades', 'p-educacao', 'p-sobre')" class="btn-nav-l">habilidades.js</button>
                             </li>
                         </ul>
                     </nav>
@@ -171,10 +167,8 @@
                         28  <br>
                         29 ...<br></p>
                 </div>
-
                 <div id="p-habilidades">
                     <p class="p-opc">
-
                     <p class="p-principal">
                         03 ...<br>
                         04 <br>
@@ -201,10 +195,55 @@
                         25 <br>
                     </p>
                 </div>
-
+                <div id="teste">
+                    TESTEEEEEE
+                    <a href=""><i class="fa-brands fa-github"></i> </a> 
+                </div>
             </div>
         </section>
         <!-- PROJETOS -->
+        <section id="projeto">
+            <h2> Projetos</h2>
+        <div class="cards">
+            <div class="carde">
+                <input type="checkbox" name="" id="">
+                <img src="/assets/img/stranger_things_projeto.jpg" alt="Card da LP Mundo Invertido">
+                
+                <div class="side">
+                    <h3>LP - Mundo Invertido</h3>
+                    <p>Projeto criado junto com a DIO para trabalhar a criação de páginas com um HTML acessível e um CSS eficiente. Além disso, utilizamos o Javascript para troca de tema</p>
+                    <br>
+                    <p>Tecnologias: HTML, CSS e Javascript</p>
+                    <a href=""><i class="fa-regular fa-circle-play play"></i></a> 
+                    <a href="https://github.com/edsonabarros/lp-mundo-invertido" target="_blank"><i class="fa-brands fa-github git"></i> </a> 
+                </div>
+            </div>
+            <div class="carde">
+                <input type="checkbox" name="" id="">
+                <img src="/assets/img/galleria-sass.png" alt="Card da LP Mundo Invertido">
+                <div class="side">
+                    <h3>Galeria com SASS</h3>
+                    <p>Projeto criado para praticar a utilização de SASS como pré-processador de CSS.</p>
+                    <br>
+                    <p>Tecnologias: HTML e SASS como pré-processador CSS</p>
+                    <a href=""><i class="fa-regular fa-circle-play play"></i></a> 
+                    <a href="https://github.com/edsonabarros/galeria-sass" target="_blank"><i class="fa-brands fa-github git"></i> </a> 
+                </div>
+            </div>
+            <div class="carde">
+                <input type="checkbox" name="" id="">
+                <img src="/assets/img/iphone-13.webp" alt="Card da LP Mundo Invertido">
+                <div class="side">
+                    <h3>Clone - iPhone 13</h3>
+                    <p>Um clone da página (antiga) do iPhone 13. A clonagem foi feita com o intuito de praticar os conhecimentos de HTML e CSS</p>
+                    <br>
+                    <p>Tecnologias: HTML e CSS</p>
+                    <a href=""><i class="fa-regular fa-circle-play play"></i></a> 
+                    <a href="https://github.com/edsonabarros/clone-iphone13" target="_blank"><i class="fa-brands fa-github git"></i> </a> 
+                </div>
+            </div>
+    </div>
+        </section>
         <!-- CONTATOS -->
     </main>
     <footer></footer>

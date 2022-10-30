@@ -169,14 +169,12 @@ body {
     .ml(20px);
     .mt(20px);
     display: none;
-
   }
 
   #p-educacao {
     .ml(20px);
     .mt(20px);
     display: none;
-
   }
 
   #p-habilidades {
@@ -258,38 +256,37 @@ body {
   text-align: center;
 }
 
-.btn-ide{
+.btn-ide {
   background: transparent;
   border: none;
   cursor: pointer;
-  color: @primary ;
+  color: @primary;
   font-family: inherit;
 }
 
-.btn-ide:hover{
+.btn-ide:hover {
   color: @secondary;
 }
 
 /*PROJETOS*/
 
-#projeto{
+#projeto {
   margin: 90px 0 10px;
 }
 
-#projeto h2{
+#projeto h2 {
   .flex-ar-c;
   font-size: 30px;
 }
 
-.cards{
+.cards {
   height: 500px;
   max-width: 1200px;
   .ma;
-  .flex-ar-c;
+  .flex-bt-c;
 }
 
-
-.card{
+.card {
   width: 300px;
   height: 400px;
   position: relative;
@@ -297,7 +294,7 @@ body {
   border-radius: 15px;
 }
 
-.card img{
+.card img {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -306,13 +303,13 @@ body {
   object-fit: cover;
 }
 
-.card input[type="checkbox"]{
+.card input[type="checkbox"] {
   position: absolute;
   font-family: "Font Awesome 5 Free";
   width: 40px;
   height: 40px;
-  background:  rgb(39, 39, 39);
-  color: white; 
+  background: rgb(39, 39, 39);
+  color: white;
   font-weight: 900;
   appearance: none;
   bottom: 10px;
@@ -322,36 +319,35 @@ body {
   align-items: center;
   border-radius: 20px;
   cursor: pointer;
-  z-index: 10; 
-  transition: transform .4s;
+  z-index: 10;
+  transition: transform 0.4s;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.238);
 }
 
-.card input[type="checkbox"]:checked{
+.card input[type="checkbox"]:checked {
   translate: -460%;
 }
 
-.card input[type="checkbox"]::before{
+.card input[type="checkbox"]::before {
   content: "\f129";
   font-family: "Font Awesome 5 Free";
   position: absolute;
   font-family: inherit;
   font-weight: 700;
   font-size: 1em;
-  
 }
 
-.card input[type="checkbox"]:checked ~ img{
+.card input[type="checkbox"]:checked ~ img {
   transform: scale(1.2) rotate(-20deg);
   filter: blur(10px);
 }
 
-.card input[type="checkbox"]:checked::before{
-  content: '\f2ea';
+.card input[type="checkbox"]:checked::before {
+  content: "\f2ea";
   font-weight: 900;
 }
 
-.card .git{
+.card .git {
   position: absolute;
   bottom: 15px;
   right: 20px;
@@ -359,7 +355,7 @@ body {
   z-index: 2;
 }
 
-.card .play{
+.card .play {
   position: absolute;
   bottom: 15px;
   right: 70px;
@@ -367,7 +363,7 @@ body {
   z-index: 2;
 }
 
-.side{
+.side {
   position: absolute;
   width: 85%;
   height: 85%;
@@ -379,43 +375,146 @@ body {
   background: rgba(29, 29, 29, 0.989);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.538);
   transform: translate(100%);
-  transition: translate .4s;
+  transition: translate 0.4s;
 }
 
-.card input[type="checkbox"]:checked ~ .side{
+.card input[type="checkbox"]:checked ~ .side {
   transform: translate(0%);
 }
 
-.side h3{
+.side h3 {
   color: #ffffff;
   margin: 25px 0 10px 15px;
 }
 
-
-.side p{
+.side p {
   color: #ffffff;
-  margin-left: 15px; 
+  margin-left: 15px;
   font-size: 0.8em;
 }
 
-#contato{
-  width: 100%;
-  height: 500px;
+.contato {
+  .wdt;
+  .ma;
+  height: 600px;
+  display: flex;
   flex-direction: column;
-  .flex-c;
+  justify-content: center;
 }
 
-#contato h3{
+.contato h3 {
   font-size: 2rem;
-  .mb(60px);
-
+  .mb(90px);
+  text-align: center;
 }
 
-.texto{
-  max-width: 500px;
+.info-contato {
+  .flex-bt-c;
 }
 
-.info-contato{
-  .flex-ar-c;
-  max-width: 1200px;
+.texto {
+  font-size: 1.2rem;
+  max-width: 800px;
+}
+
+.icons-contato {
+  display: flex;
+  column-gap: 25px;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 26px;
+  color: #fff;
+  border-radius: 50%;
+  outline: 2px solid #fff;
+  transition-property: outline-offset, outline-color, background-color;
+  transition: 0.8s;
+}
+
+.icon:hover {
+  outline-offset: 4px;
+}
+.icon:hover i {
+  animation: shake 0.25s;
+}
+
+.icon-linkedin:hover {
+  background-color: #1da1f2;
+  outline-color: #1da1f2;
+}
+
+.icon-whatsapp:hover {
+  background-color: #34af23;
+  outline-color: #34af23;
+}
+
+.icon-email:hover {
+  background-color: #ef3a25;
+  outline-color: #ef3a25;
+}
+
+.li-dev {
+  .li-contact;
+  width: 300px;
+  /*   border-left: none; */
+}
+
+footer {
+  .mb(10px);
+}
+
+footer .header-nav {
+  .flex-bt-c;
+}
+
+footer .header-li {
+  padding: 7px;
+}
+
+footer .icon {
+  width: 30px;
+  height: 30px;
+  font-size: 20;
+  outline: none;
+}
+
+.redes-sociais-extra{
+  .flex-c;
+  column-gap: 25px;
+}
+
+footer .icon-instagram:hover {
+  background-image: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+}
+
+.icon-git:hover {
+  background-color: @gd-final;
+}
+
+@keyframes shake {
+  10% {
+    transform: rotate(15deg);
+  }
+  20% {
+    transform: rotate(-15deg);
+  }
+  30% {
+    transform: rotate(15deg);
+  }
+  40% {
+    transform: rotate(-15deg);
+  }
 }

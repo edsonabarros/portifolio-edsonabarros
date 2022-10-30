@@ -25,7 +25,7 @@
   justify-content: space-between;
   align-items: center;
 }
-.flex-ar-c {
+.flex-ar {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -42,6 +42,7 @@
   border-bottom: 0.1rem solid #e99287;
 }
 .header {
+  width: 100%;
   max-width: 1200px;
   display: flex;
   border: 0.1rem solid #364758;
@@ -321,7 +322,7 @@ body p {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 .card {
@@ -375,7 +376,7 @@ body p {
   filter: blur(10px);
 }
 .card input[type="checkbox"]:checked::before {
-  content: '\f2ea';
+  content: "\f2ea";
   font-weight: 900;
 }
 .card .git {
@@ -418,24 +419,118 @@ body p {
   margin-left: 15px;
   font-size: 0.8em;
 }
-#contato {
+.contato {
   width: 100%;
-  height: 500px;
-  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 600px;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
 }
-#contato h3 {
+.contato h3 {
   font-size: 2rem;
-  margin-bottom: 60px;
-}
-.texto {
-  max-width: 500px;
+  margin-bottom: 90px;
+  text-align: center;
 }
 .info-contato {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
+}
+.texto {
+  font-size: 1.2rem;
+  max-width: 800px;
+}
+.icons-contato {
+  display: flex;
+  column-gap: 25px;
+}
+.icon {
+  width: 60px;
+  height: 60px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 26px;
+  color: #fff;
+  border-radius: 50%;
+  outline: 2px solid #fff;
+  transition-property: outline-offset, outline-color, background-color;
+  transition: 0.8s;
+}
+.icon:hover {
+  outline-offset: 4px;
+}
+.icon:hover i {
+  animation: shake 0.25s;
+}
+.icon-linkedin:hover {
+  background-color: #1da1f2;
+  outline-color: #1da1f2;
+}
+.icon-whatsapp:hover {
+  background-color: #34af23;
+  outline-color: #34af23;
+}
+.icon-email:hover {
+  background-color: #ef3a25;
+  outline-color: #ef3a25;
+}
+.li-dev {
+  border-left: 0.1rem solid #364758;
+  width: 130px;
+  list-style: none;
+  padding: 12px;
+  margin-left: 5px;
+  text-align: center;
+  width: 300px;
+  /*   border-left: none; */
+}
+.li-dev:hover {
+  color: #fea55f;
+}
+footer {
+  margin-bottom: 10px;
+}
+footer .header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .header-li {
+  padding: 7px;
+}
+footer .icon {
+  width: 30px;
+  height: 30px;
+  font-size: 20;
+  outline: none;
+}
+.redes-sociais-extra {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 25px;
+}
+footer .icon-instagram:hover {
+  background-image: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+}
+.icon-git:hover {
+  background-color: #4d5bce;
+}
+@keyframes shake {
+  10% {
+    transform: rotate(15deg);
+  }
+  20% {
+    transform: rotate(-15deg);
+  }
+  30% {
+    transform: rotate(15deg);
+  }
+  40% {
+    transform: rotate(-15deg);
+  }
 }

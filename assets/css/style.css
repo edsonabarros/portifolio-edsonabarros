@@ -367,7 +367,6 @@ body p {
   content: "\f129";
   font-family: "Font Awesome 5 Free";
   position: absolute;
-  font-family: inherit;
   font-weight: 700;
   font-size: 1em;
 }
@@ -427,24 +426,38 @@ body p {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  transition: 1s;
 }
 .contato h3 {
   font-size: 2rem;
-  margin-bottom: 90px;
+  margin-bottom: 50px;
   text-align: center;
 }
 .info-contato {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: column;
 }
 .texto {
   font-size: 1.2rem;
   max-width: 800px;
 }
-.icons-contato {
-  display: flex;
+.select {
+  background: #011221;
+  color: #e5e9f0;
+  font-size: 1.2rem;
+  border-radius: 15px;
+  padding: 5px;
+  margin-bottom: 30px;
+}
+#icons-contato {
+  display: none;
   column-gap: 25px;
+  margin-left: 20px;
+}
+#assunto {
+  display: none;
 }
 .icon {
   width: 60px;
@@ -477,6 +490,65 @@ body p {
 .icon-email:hover {
   background-color: #ef3a25;
   outline-color: #ef3a25;
+}
+.info-email {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+  font-size: 1em;
+}
+.info-btn {
+  background: transparent;
+  position: relative;
+  border: none;
+  cursor: pointer;
+  color: white;
+  top: 40px;
+  right: 12px;
+}
+.modal {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #011221;
+  border: 1.6px solid #e5e9f0;
+  color: #e5e9f0;
+  z-index: 99999;
+  opacity: 0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+  width: 280px;
+  height: 290px;
+  border-radius: 20px;
+}
+.modal h3 {
+  font-size: 1.4em;
+  margin-bottom: 6px;
+  margin-top: 12px;
+}
+.modal p {
+  text-align: justify;
+  font-size: 1rem;
+  padding: 10px;
+}
+.modal:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+.fechar {
+  position: absolute;
+  width: 30px;
+  right: 10px;
+  top: 0px;
+  text-align: center;
+  line-height: 30px;
+  margin-top: 5px;
+  background: transparent;
+  border-radius: 50%;
+  font-size: 16px;
+  color: #e5e9f0;
 }
 .li-dev {
   border-left: 0.1rem solid #364758;

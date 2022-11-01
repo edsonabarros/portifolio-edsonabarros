@@ -1,299 +1,457 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Edson Barros</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <script src="https://kit.fontawesome.com/d6d99848bc.js" crossorigin="anonymous"></script>
-</head>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/d6d99848bc.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
+  <body>
     <!-- HEADER -->
     <header class="header">
-        <nav class="header-nav">
-            <ul class="header-ul">
-                <li class="header-li" id="name">
-                    <a href="#"> edsonabarros</a>
-                </li>
-                <li class="header-li page-hello">
-                    <a href="#hello"> _hello</a>
-                </li>
-                <li class="header-li">
-                    <a href="#sobre-mim"> _sobre-mim</a>
-                </li>
-                <li class="header-li"> <a href="#">_projetos</a>
-                </li>
-            </ul>
-            <ul>
-                <li class="li-contact">
-                    <a href="#">_contato</a>
-                </li>
-            </ul>
-        </nav>
+      <nav class="header-nav">
+        <ul class="header-ul">
+          <li class="header-li" id="name">
+            <a href="#"> edsonabarros</a>
+          </li>
+          <li class="header-li page-hello">
+            <a href="#hello"> _hello</a>
+          </li>
+          <li class="header-li">
+            <a href="#sobre-mim"> _sobre-mim</a>
+          </li>
+          <li class="header-li"><a href="#">_projetos</a></li>
+        </ul>
+        <ul>
+          <li class="li-contact">
+            <a href="#">_contato</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main>
-        <!-- APRESENTAÇÃO E PROJETO -->
-        <section class="container" id="hello">
-            <div class="text-presentation">
-                <p>Olá! Eu me chamo </p>
-                <h1>Edson Barros</h1>
-                <h2>> Desenvolvedor Web</h2>
-                <p>// Projeto utilizando animações com css</p>
-                <p>// Clique no botão para testar ou dê uma olhada no código lá no Github!</p>
-                <div id="github-project">
-                    <p id="var">var</p>
-                    <p id="gt-link"> githubLink = </p>
-                    <p id="link-presentation">"<a
-                            href="https://github.com/edsonabarros">https://github.com/edsonabarros</a>"</p>
-                </div>
-            </div>
-            <div class="box-presentation">
-                <div class="circle" id="top-left"></div>
-                <div class="circle" id="top-right"></div>
-                <div class="circle" id="bottom-left"></div>
-                <div class="circle" id="bottom-right"></div>
-            </div>
-        </section>
-        <!-- SOBRE MIM -->
-        <section id="sobre-mim">
-            <div class="header">
-                <nav class="header-nav">
-                    <ul class="header-ul">
-                        <li class="header-li" id="name">
-                            <p>_sobre-mim</p>
-                        </li>
-                        <li class="header-li escondido" id="sobre">
-                            <img  class="img-header" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
-                            <button type="button" onclick="abrirArquivo('sobre','p-sobre', 'p-educacao', 'p-habilidades')" class="btn-ide">sobre.html</button>
-                            <button type="button" onclick="esconderArquivo('sobre','p-sobre','p-educacao')" class="btn-x">x</button>
-                        </li>
-                        <li class="header-li escondido" id="educacao">
-                            <img  class="img-header" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
-                            <button type="button" onclick="abrirArquivo('educacao', 'p-educacao', 'p-habilidades', 'p-sobre')" class="btn-ide">educação.css</button>
-                            <button type="button" onclick="esconderArquivo('educacao','p-educacao','p-habilidades')" class="btn-x">x</button>
-                        </li>
-                        <li class="header-li " id="habilidades">
-                            <img class="img-header" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
-                            <button type="button" onclick="abrirArquivo('habilidades', 'p-habilidades', 'p-educacao', 'p-sobre')" class="btn-ide">habilidades.js</button>
-                            <button type="button" onclick="esconderArquivo('habilidades','p-habilidades','p-sobre')" class="btn-x">x</button>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="conteudo">
-                <div class="left-nav">
-                    <nav>
-                        <ul>
-                            <li>
-                                <img class="img-nav"
-                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
-                                    <button type="button" onclick="abrirArquivo('sobre','p-sobre', 'p-educacao', 'p-habilidades')" class="btn-nav-l">sobre.html</button>
-                            </li>
-                            <li>
-                                <img class="img-nav" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
-                                <button type="button" onclick="abrirArquivo('educacao', 'p-educacao', 'p-habilidades', 'p-sobre')" class="btn-nav-l">educação.css</button>
-                            </li>
-                            <li>
-                                <img class="img-nav" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
-                                    <button type="button" onclick="abrirArquivo('habilidades', 'p-habilidades', 'p-educacao', 'p-sobre')" class="btn-nav-l">habilidades.js</button>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-                <div id="p-sobre">
-                    <p class="p-opc">
-                        05  <br>
-                        06 <span>&lttitle></span>Edson Barros<span>&lt/title></span><br>
-                        07 <span>&ltlink rel="stylesheet" href="habilidades.css"&gt</span> <br>
-                        08 <span>&lt/head&gt</span><br>
-                        09 <span>&ltbody&gt</span><br>
-                        10 <span>&ltmain&gt</span> <br>
-                        11 <span>&ltsection class="apresentacao"&gt</span> <br></p>
-                    <p class="p-principal">
-                        12 <span>&lth1&gt</span> Edson Barros <span>&lt/h1&gt</span><br>
-                        13 <span>&ltp&gt</span> Olá! Eu me chamo Edson de Andrade Barros, tenho 23 anos e sou apaixonado
-                        por <br>
-                        14 tecnologia! Estou no último semestre da faculdade e focando os estudos em melhorar <br>
-                        15 minhas habilidades no front-end e back-end! <span>&lt/p&gt</span><br>
-                        16 <span>&ltp&gt</span> Para o front-end, estou estudando CSS (utilizando o pré-processador
-                        LESS) <br>
-                        17 e Javascript, já pensando em aprender um framework no futuro, como React ou
-                        Angular!<span>&lt/p&gt</span><br>
-                        18 <span>&ltp&gt</span> No back-end, estou estudando Java com Spring
-                        Framework<span>&lt/p&gt</span><br>
-                    </p>
-                    <p class="p-opc">
-                        19 <span>&lt/section&gt</span> <br>
-                        20 <span>&lt/main&gt</span><br>
-                        21 <span>&ltfooter&gt</span><br>
-                        22 <span>&ltp&gt</span> DEV: Edson Barros!<span>&lt/p&gt</span><br>
-                        23 <span>&lt/footer&gt</span><br>
-                        24 <span>&lt/body&gt</span><br>
-                        25 <span>&lt/html&gt</span><br>
-                    </p>
-                </div>
-                <div id="p-educacao">
-                    <p class="p-opc">
-                        04 ...<br>
-                        05 <br>
-                        06 <span class="css">*</span>{ <br>
-                        07 <span>margin:</span> 0;<br>
-                        08 <span>padding:</span> 0;<br>
-                        09 <span>box-sizing:</span> border-box;<br>
-                        10 } <br>
-                        11  <br></p>
-                    <p class="p-principal">
-                        12 <span class="css">faculdade</span> {<br>
-                        13 <span>curso:</span> Análise e Desenvolvimento de Sistemas;<br>
-                        14 <span>instituição:</span> Fatec Zona Sul; <br>
-                        15 <span>conclusão:</span> Dezembro de 2022;<br>
-                        16 } <br>
-                        17 <br>
-                        18 <span class="css">técnico</span> {<br>
-                        19 <span>curso:</span> Técnico em Informática;<br>
-                        20 <span>instituição:</span> ETEC Jardim Ângela; <br>
-                        21 <span>conclusão:</span> Julho de 2018;<br>
-                        22 } <br>
-                    </p>
-                    <p class="p-opc">
-                        23 <br>
-                        24 <span class="css">h1</span>{ <br>
-                        25 <span>font-size:</span> 4rem;<br>
-                        26 <span>font-weight:</span> 500;<br>
-                        27 } <br>
-                        28  <br>
-                        29 ...<br></p>
-                </div>
-                <div id="p-habilidades">
-                    <p class="p-opc">
-                    <p class="p-principal">
-                        03 ...<br>
-                        04 <br>
-                        05 <span>//</span>Java <br>
-                        06 <span class="css">const</span> debug;<br>
-                        07 <span class="css">const</span> exceções;<br>
-                        08 <span class="css">const</span> collections;<br>
-                        09 <span class="css">const</span> maven;<br>
-                        10 <br>
-                        11 <span>//</span><spconstclass="css">Spring Framework</span> <br>
-                        12 <span class="css">const</span> restApi;<br>
-                        13 <span class="css">const</span> testes;<br>
-                        14 <span class="css">const</span> documentação;<br>
-                        15 <br>
-                        16 <span>//</span><spconstclass="css">CSS</span> <br>
-                        17 <span class="css">const</span> flexBox;<br>
-                        18 <span class="css">const</span> responsividade;<br>
-                        19 <span class="css">const</span> animações;<br>
-                        20 <br>
-                        21 <span>//</span><spconstclass="css">Javascript</span> <br>
-                        22 <span class="css">const</span> funções;<br>
-                        23 <span class="css">const</span> ES6;<br>
-                        24 <span class="css">const</span> jQuery;<br>
-                        25 <br>
-                    </p>
-                </div>
-                <div id="teste">
-                    TESTEEEEEE
-                    <a href=""><i class="fa-brands fa-github"></i> </a> 
-                </div>
-            </div>
-        </section>
-        <!-- PROJETOS -->
-        <section id="projeto">
-            <h2> Projetos</h2>
+      <!-- APRESENTAÇÃO E PROJETO -->
+      <section class="container" id="hello">
+        <div class="text-presentation">
+          <p>Olá! Eu me chamo</p>
+          <h1>Edson Barros</h1>
+          <h2>> Desenvolvedor Web</h2>
+          <p>// Projeto utilizando animações com css</p>
+          <p>
+            // Clique no botão para testar ou dê uma olhada no código lá no
+            Github!
+          </p>
+          <div id="github-project">
+            <p id="var">var</p>
+            <p id="gt-link">githubLink =</p>
+            <p id="link-presentation">
+              "<a href="https://github.com/edsonabarros"
+                >https://github.com/edsonabarros</a
+              >"
+            </p>
+          </div>
+        </div>
+        <div class="box-presentation">
+          <div class="circle" id="top-left"></div>
+          <div class="circle" id="top-right"></div>
+          <div class="circle" id="bottom-left"></div>
+          <div class="circle" id="bottom-right"></div>
+        </div>
+      </section>
+      <!-- SOBRE MIM -->
+      <section id="sobre-mim">
+        <div class="header">
+          <nav class="header-nav">
+            <ul class="header-ul">
+              <li class="header-li" id="name">
+                <p>_sobre-mim</p>
+              </li>
+              <li class="header-li escondido" id="sobre">
+                <img
+                  class="img-header"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                />
+                <button
+                  type="button"
+                  onclick="abrirArquivo('sobre','p-sobre', 'p-educacao', 'p-habilidades')"
+                  class="btn-ide"
+                >
+                  sobre.html
+                </button>
+                <button
+                  type="button"
+                  onclick="esconderArquivo('sobre','p-sobre','p-educacao')"
+                  class="btn-x"
+                >
+                  x
+                </button>
+              </li>
+              <li class="header-li escondido" id="educacao">
+                <img
+                  class="img-header"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                />
+                <button
+                  type="button"
+                  onclick="abrirArquivo('educacao', 'p-educacao', 'p-habilidades', 'p-sobre')"
+                  class="btn-ide"
+                >
+                  educação.css
+                </button>
+                <button
+                  type="button"
+                  onclick="esconderArquivo('educacao','p-educacao','p-habilidades')"
+                  class="btn-x"
+                >
+                  x
+                </button>
+              </li>
+              <li class="header-li" id="habilidades">
+                <img
+                  class="img-header"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                />
+                <button
+                  type="button"
+                  onclick="abrirArquivo('habilidades', 'p-habilidades', 'p-educacao', 'p-sobre')"
+                  class="btn-ide"
+                >
+                  habilidades.js
+                </button>
+                <button
+                  type="button"
+                  onclick="esconderArquivo('habilidades','p-habilidades','p-sobre')"
+                  class="btn-x"
+                >
+                  x
+                </button>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="conteudo">
+          <div class="left-nav">
+            <nav>
+              <ul>
+                <li>
+                  <img
+                    class="img-nav"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                  />
+                  <button
+                    type="button"
+                    onclick="abrirArquivo('sobre','p-sobre', 'p-educacao', 'p-habilidades')"
+                    class="btn-nav-l"
+                  >
+                    sobre.html
+                  </button>
+                </li>
+                <li>
+                  <img
+                    class="img-nav"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                  />
+                  <button
+                    type="button"
+                    onclick="abrirArquivo('educacao', 'p-educacao', 'p-habilidades', 'p-sobre')"
+                    class="btn-nav-l"
+                  >
+                    educação.css
+                  </button>
+                </li>
+                <li>
+                  <img
+                    class="img-nav"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                  />
+                  <button
+                    type="button"
+                    onclick="abrirArquivo('habilidades', 'p-habilidades', 'p-educacao', 'p-sobre')"
+                    class="btn-nav-l"
+                  >
+                    habilidades.js
+                  </button>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div id="p-sobre">
+            <p class="p-opc">
+              05 <br />
+              06 <span>&lttitle></span>Edson Barros<span>&lt/title></span><br />
+              07
+              <span>&ltlink rel="stylesheet" href="habilidades.css"&gt</span>
+              <br />
+              08 <span>&lt/head&gt</span><br />
+              09 <span>&ltbody&gt</span><br />
+              10 <span>&ltmain&gt</span> <br />
+              11 <span>&ltsection class="apresentacao"&gt</span> <br />
+            </p>
+            <p class="p-principal">
+              12 <span>&lth1&gt</span> Edson Barros <span>&lt/h1&gt</span><br />
+              13 <span>&ltp&gt</span> Olá! Eu me chamo Edson de Andrade Barros,
+              tenho 23 anos e sou apaixonado por <br />
+              14 tecnologia! Estou no último semestre da faculdade e focando os
+              estudos em melhorar <br />
+              15 minhas habilidades no front-end e back-end!
+              <span>&lt/p&gt</span><br />
+              16 <span>&ltp&gt</span> Para o front-end, estou estudando CSS
+              (utilizando o pré-processador LESS) <br />
+              17 e Javascript, já pensando em aprender um framework no futuro,
+              como React ou Angular!<span>&lt/p&gt</span><br />
+              18 <span>&ltp&gt</span> No back-end, estou estudando Java com
+              Spring Framework<span>&lt/p&gt</span><br />
+            </p>
+            <p class="p-opc">
+              19 <span>&lt/section&gt</span> <br />
+              20 <span>&lt/main&gt</span><br />
+              21 <span>&ltfooter&gt</span><br />
+              22 <span>&ltp&gt</span> DEV: Edson Barros!<span>&lt/p&gt</span
+              ><br />
+              23 <span>&lt/footer&gt</span><br />
+              24 <span>&lt/body&gt</span><br />
+              25 <span>&lt/html&gt</span><br />
+            </p>
+          </div>
+          <div id="p-educacao">
+            <p class="p-opc">
+              04 ...<br />
+              05 <br />
+              06 <span class="css">*</span>{ <br />
+              07 <span>margin:</span> 0;<br />
+              08 <span>padding:</span> 0;<br />
+              09 <span>box-sizing:</span> border-box;<br />
+              10 } <br />
+              11 <br />
+            </p>
+            <p class="p-principal">
+              12 <span class="css">faculdade</span> {<br />
+              13 <span>curso:</span> Análise e Desenvolvimento de Sistemas;<br />
+              14 <span>instituição:</span> Fatec Zona Sul; <br />
+              15 <span>conclusão:</span> Dezembro de 2022;<br />
+              16 } <br />
+              17 <br />
+              18 <span class="css">técnico</span> {<br />
+              19 <span>curso:</span> Técnico em Informática;<br />
+              20 <span>instituição:</span> ETEC Jardim Ângela; <br />
+              21 <span>conclusão:</span> Julho de 2018;<br />
+              22 } <br />
+            </p>
+            <p class="p-opc">
+              23 <br />
+              24 <span class="css">h1</span>{ <br />
+              25 <span>font-size:</span> 4rem;<br />
+              26 <span>font-weight:</span> 500;<br />
+              27 } <br />
+              28 <br />
+              29 ...<br />
+            </p>
+          </div>
+          <div id="p-habilidades">
+            <p class="p-opc"></p>
+            <p class="p-principal">
+              03 ...<br />
+              04 <br />
+              05 <span>//</span>Java <br />
+              06 <span class="css">const</span> debug;<br />
+              07 <span class="css">const</span> exceções;<br />
+              08 <span class="css">const</span> collections;<br />
+              09 <span class="css">const</span> maven;<br />
+              10 <br />
+              11 <span>//</span><span class="css">Spring Framework</span> <br />
+              12 <span class="css">const</span> restApi;<br />
+              13 <span class="css">const</span> testes;<br />
+              14 <span class="css">const</span> documentação;<br />
+              15 <br />
+              16 <span>//</span><span class="css">CSS</span> <br />
+              17 <span class="css">const</span> flexBox;<br />
+              18 <span class="css">const</span> responsividade;<br />
+              19 <span class="css">const</span> animações;<br />
+              20 <br />
+              21 <span>//</span><span class="css">Javascript</span> <br />
+              22 <span class="css">const</span> funções;<br />
+              23 <span class="css">const</span> ES6;<br />
+              24 <span class="css">const</span> jQuery;<br />
+              25 <br />
+            </p>
+          </div>
+          <div id="teste">
+            TESTEEEEEE
+            <a href=""><i class="fa-brands fa-github"></i> </a>
+          </div>
+        </div>
+      </section>
+      <!-- PROJETOS -->
+      <section id="projeto">
+        <h2>Projetos</h2>
         <div class="cards">
-            <div class="card">
-                <input type="checkbox" name="" id="">
-                <img src="/assets/img/stranger_things_projeto.jpg" alt="Card da LP Mundo Invertido">
-                
-                <div class="side">
-                    <h3>LP - Mundo Invertido</h3>
-                    <p>Projeto criado junto com a DIO para trabalhar a criação de páginas com um HTML acessível e um CSS eficiente. Além disso, utilizamos o Javascript para troca de tema</p>
-                    <br>
-                    <p>Tecnologias: HTML, CSS e Javascript</p>
-                    <a href=""><i class="fa-regular fa-circle-play play"></i></a> 
-                    <a href="https://github.com/edsonabarros/lp-mundo-invertido" target="_blank"><i class="fa-brands fa-github git"></i> </a> 
-                </div>
-            </div>
-            <div class="card">
-                <input type="checkbox" name="" id="">
-                <img src="/assets/img/galleria-sass.png" alt="Card da LP Mundo Invertido">
-                <div class="side">
-                    <h3>Galeria com SASS</h3>
-                    <p>Projeto criado para praticar a utilização de SASS como pré-processador de CSS.</p>
-                    <br>
-                    <p>Tecnologias: HTML e SASS como pré-processador CSS</p>
-                    <a href=""><i class="fa-regular fa-circle-play play"></i></a> 
-                    <a href="https://github.com/edsonabarros/galeria-sass" target="_blank"><i class="fa-brands fa-github git"></i> </a> 
-                </div>
-            </div>
-            <div class="card">
-                <input type="checkbox" name="" id="">
-                <img src="/assets/img/iphone-13.webp" alt="Card da LP Mundo Invertido">
-                <div class="side">
-                    <h3>Clone - iPhone 13</h3>
-                    <p>Um clone da página (antiga) do iPhone 13. A clonagem foi feita com o intuito de praticar os conhecimentos de HTML e CSS.</p>
-                    <br>
-                    <p>Tecnologias: HTML e CSS.</p>
-                    <a href=""><i class="fa-regular fa-circle-play play"></i></a> 
-                    <a href="https://github.com/edsonabarros/clone-iphone13" target="_blank"><i class="fa-brands fa-github git"></i> </a> 
-                </div>
-            </div>
-    </div>
-        </section>
-        <!-- CONTATOS -->
-        <section  class="contato">
-            <h3>Precisa falar comigo? </h3>
-            <div class="info-contato">
-            <div class="texto">
-                Caso você esteja iniciando ou tenha alguma dúvida sobre qualquer projeto daqui, me mande uma mensagem que explicarei!</br></br>
-                Caso você seja um recrutador com interesse em entrar em contato, peço que mande uma mensagem pelo Whatsapp ou LinkedIn. Como recebo muitas ligações de spam no meu número atual, ligações de números não salvos são bloqueadas de forma automática! Obrigado.</br>
-                
-            </div>
-            <div class="icons-contato">
-                <a href="" class="icon icon-linkedin">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-                <a href="" class="icon icon-whatsapp">
-                    <i class="fab fa-whatsapp"></i>
-                </a>
-                <a href="" class="icon icon-email">
-                    <i class="fas fa-envelope-open-text"></i>
-                </a>
-            </div>
-        </div>       
-        </section> 
+          <div class="card">
+            <input type="checkbox" name="" id="" />
+            <img
+              src="/assets/img/stranger_things_projeto.jpg"
+              alt="Card da LP Mundo Invertido"
+            />
 
+            <div class="side">
+              <h3>LP - Mundo Invertido</h3>
+              <p>
+                Projeto criado junto com a DIO para trabalhar a criação de
+                páginas com um HTML acessível e um CSS eficiente. Além disso,
+                utilizamos o Javascript para troca de tema
+              </p>
+              <br />
+              <p>Tecnologias: HTML, CSS e Javascript</p>
+              <a href=""><i class="fa-regular fa-circle-play play"></i></a>
+              <a
+                href="https://github.com/edsonabarros/lp-mundo-invertido"
+                target="_blank"
+                ><i class="fa-brands fa-github git"></i>
+              </a>
+            </div>
+          </div>
+          <div class="card">
+            <input type="checkbox" name="" id="" />
+            <img
+              src="/assets/img/galleria-sass.png"
+              alt="Card da LP Mundo Invertido"
+            />
+            <div class="side">
+              <h3>Galeria com SASS</h3>
+              <p>
+                Projeto criado para praticar a utilização de SASS como
+                pré-processador de CSS.
+              </p>
+              <br />
+              <p>Tecnologias: HTML e SASS como pré-processador CSS</p>
+              <a href=""><i class="fa-regular fa-circle-play play"></i></a>
+              <a
+                href="https://github.com/edsonabarros/galeria-sass"
+                target="_blank"
+                ><i class="fa-brands fa-github git"></i>
+              </a>
+            </div>
+          </div>
+          <div class="card">
+            <input type="checkbox" name="" id="" />
+            <img
+              src="/assets/img/iphone-13.webp"
+              alt="Card da LP Mundo Invertido"
+            />
+            <div class="side">
+              <h3>Clone - iPhone 13</h3>
+              <p>
+                Um clone da página (antiga) do iPhone 13. A clonagem foi feita
+                com o intuito de praticar os conhecimentos de HTML e CSS.
+              </p>
+              <br />
+              <p>Tecnologias: HTML e CSS.</p>
+              <a href=""><i class="fa-regular fa-circle-play play"></i></a>
+              <a
+                href="https://github.com/edsonabarros/clone-iphone13"
+                target="_blank"
+                ><i class="fa-brands fa-github git"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- CONTATOS -->
+      <section class="contato">
+        <h3>Precisa falar comigo?</h3>
+        <div class="info-contato">
+          <div class="texto">
+            <p>
+              Olá! Se você quiser falar comigo sobre qualquer assunto, me chame
+              que responderei o mais rápido possível!
+            </p>
+            <br />
+            <p>
+              Selecione as opções que mais se aproximam do motivo de seu contato
+              e me mande uma mensagem!
+            </p>
+            <br /><br />
+            <!-- <label for="tipoPessoa">Quem é você?</label> -->
+            <p>Você é um:</p>
+            <select
+              onchange="tipoPessoa(this)"
+              class="select"
+              name="tipoPessoa"
+              id="tipoPessoa"
+            >
+              <option value="selecionar">Selecionar</option>
+              <option value="recrutador">Recrutador</option>
+              <option value="dev">Estudante / DEV</option>
+            </select>
+            <div id="assunto">
+              <p>Sobre o que quer falar?</p>
+              <select class="select" onchange="tipoPessoa(this) " name="tipoAssunto" id="tipoAssunto">
+                <option value="selecionar">Selecionar</option>
+                <option value="duvida">Gostaria de tirar uma dúvida!</option>
+                <option value="comeco">Estou começando! Gostaria de algumas dicas!</option>
+                <option value="projeto">
+                  Que tal fazer um projeto comigo?
+                </option>
+              </select>
+            </div>
+          </div>
+          <div id="icons-contato">
+            <a
+              href="https://www.linkedin.com/in/edsonabarros/"
+              id="linkedin"
+              class="icon icon-linkedin"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="#" id="whatsapp" class="icon icon-whatsapp">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="#" id="email" class="icon icon-email">
+              <i class="fas fa-envelope-open-text"></i>
+            </a>
+            <a class="info-btn" href="#abrirModal"> <i class=" info-email fa-regular fa-circle-info"></i></a>
+            
+            <div id="abrirModal" class="modal">
+              <a href="#fechar" title="Fechar" class="fechar">x</a>
+              <h3>E-mail</h3>
+              <p>Para utilizar o botão de e-mail, você precisará de um cliente de e-mail instalado em seu computador ou celular.</p>
+              <p>Para abrir no navegador, terá que configurar sua conta para abrir links "mail to".</p>
+              <p>De qualquer forma, aqui está o e-mail: edsonabarros01@gmail.com </p>
+            </div>
+
+
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
-        <div class="header">
+      <div class="header">
         <div class="header-nav">
-            <ul class="header-ul">
-                <li class="header-li redes-sociais-extra" id="name">
-                    <a href="" class="icon icon-instagram">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="" class="icon icon-git">
-                        <i class="fab fa-github-alt"></i>
-                    </a>
-                </li>
-                
-            </ul>
-            <ul>
-                <li class="li-dev">
-                    <a href="#">final dev = edsonabarros;</a>
-                </li>
-            </ul>
+          <ul class="header-ul">
+            <li class="header-li redes-sociais-extra" id="name">
+              <a href="" class="icon icon-instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="" class="icon icon-git">
+                <i class="fab fa-github-alt"></i>
+              </a>
+            </li>
+          </ul>
+          <ul>
+            <li class="li-dev">
+              <a href="#">final dev = edsonabarros;</a>
+            </li>
+          </ul>
         </div>
-    </div>
+      </div>
     </footer>
 
-
-    <script src="assets/js/sobre.js">
-    </script>
-</body>
-
+    <script src="assets/js/sobre.js"></script>
+    <script src="assets/js/contato.js"></script>
+  </body>
 </html>

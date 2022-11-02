@@ -2,6 +2,7 @@ function esconderArquivo(idBotao, idArquivo, idMostrar) {
   let valueBotao = document.getElementById(idBotao);
   let valueArquivo = document.getElementById(idArquivo);
   let valueMostrar = document.getElementById(idMostrar);
+  let abrirArquivo = document.getElementById("abrir-arquivo");
 
   let vSobre;
   let vHabilidades;
@@ -11,14 +12,15 @@ function esconderArquivo(idBotao, idArquivo, idMostrar) {
   let educacao = document.querySelector("#educacao");
   let habilidades = document.querySelector("#habilidades");
 
+
   if (idArquivo === "p-educacao" && habilidades.offsetParent === null) {
     valueMostrar = document.getElementById("p-sobre");
-    alert("Sobre1");
-  } else if (idArquivo === "p-sobre" && educacao.offsetParent == null) {
-    valueMostrar = document.getElementById("p-educacao");
-    alert("Educa1");
-  } else if (idArquivo === "p-habilidades" && educacao.offsetParent === !null) {
-    alert("Educa 2");
+
+  } else if (idArquivo === "p-sobre" && educacao.offsetParent === null) {
+    valueMostrar = document.getElementById("p-habilidades");
+
+  } else if (idArquivo === "p-habilidades" && educacao.style.display == "flex") {
+
     valueMostrar = document.getElementById("p-educacao");
   } else {
     valueMostrar = document.getElementById(idMostrar);
@@ -29,6 +31,7 @@ function esconderArquivo(idBotao, idArquivo, idMostrar) {
   if (displayA == "block") {
     valueArquivo.style.display = "none";
     valueBotao.style.display = "none";
+    abrirArquivo.style.display = "none";
     valueMostrar.style.display = "block";
   } else {
     valueArquivo.style.display = "none";
@@ -43,52 +46,32 @@ function esconderArquivo(idBotao, idArquivo, idMostrar) {
     valueArquivo.style.display = "none";
     valueBotao.style.display = "none";
     valueMostrar.style.display = "none";
+    abrirArquivo.style.display = "flex";
   }
-  /*     if (
-      sobre.offsetParent === !null &&
-      educacao.offsetParent === null &&
-      habilidades.offsetParent === null
-    ) {
-      vSobre.style.display = "block";
-    } else if (
-      sobre.offsetParent === null &&
-      educacao.offsetParent === !null &&
-      habilidades.offsetParent === null
-    ) {
-      vEducacao.style.display = "block";
-    }else if (
-      sobre.offsetParent === null &&
-      educacao.offsetParent === null &&
-      habilidades.offsetParent === !null
-    ){
-      vHabilidades.style.display = "block";
-    }
 
-  alert(vSobre, vEducacao, vHabilidades);
-
-/  if (
-    sobre.offsetParent === null &&
-    educacao.offsetParent === null &&
-    habilidades.offsetParent === null
-  ) {
-    valueBotao.style.display = "none";
-    valueArquivo.style.display = "none";
-    valueMostrar.style.display = "none";
-  } else if (
-    sobre.offsetParent === !null &&
-    educacao.offsetParent === null &&
-    habilidades.offsetParent === null
-  ) {
-    vSobre.style.display = "block";
-  }  */
 }
 function abrirArquivo(idBotao, idArquivo, idEsconder, idEsconder2) {
   let valueBotao = document.getElementById(idBotao);
   let valueArquivo = document.getElementById(idArquivo);
   let esconderArquivo = document.getElementById(idEsconder);
   let esconderArquivo2 = document.getElementById(idEsconder2);
+  let abrirArquivo = document.getElementById("abrir-arquivo");
+
+  if(screen.width > 879){
   valueBotao.style.display = "flex";
   valueArquivo.style.display = "block";
   esconderArquivo.style.display = "none";
   esconderArquivo2.style.display = "none";
+  abrirArquivo.style.display = "none";
+  }else{
+    valueBotao.style.display = "none";
+    valueArquivo.style.display = "block";
+    esconderArquivo.style.display = "none";
+    esconderArquivo2.style.display = "none";
+    abrirArquivo.style.display = "none";
+  }
+
+
+
+
 }

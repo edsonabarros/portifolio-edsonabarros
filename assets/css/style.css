@@ -147,11 +147,22 @@ body p {
   color: #fea55f;
 }
 .box-presentation {
-  width: 500px;
+  width: 450px;
   height: 460px;
   background-image: linear-gradient(#3c9d93, #4d5bce);
   border-radius: 20px;
   border: 0.5px solid black;
+  position: relative;
+}
+.box-presentation .card {
+  width: 500px;
+  height: 460px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+}
+.box-presentation .card input[type="checkbox"]:checked {
+  translate: -870%;
 }
 .circle {
   position: relative;
@@ -307,9 +318,17 @@ body p {
 .btn-ide:hover {
   color: #fea55f;
 }
+#abrir-arquivo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
 /*PROJETOS*/
 #projeto {
   margin: 90px 0 10px;
+  height: 500px;
 }
 #projeto h2 {
   display: flex;
@@ -319,6 +338,7 @@ body p {
 }
 .cards {
   height: 500px;
+  max-height: 1000px;
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
@@ -422,7 +442,7 @@ body p {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  height: 600px;
+  height: 700px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -493,7 +513,7 @@ body p {
 }
 .info-email {
   font-family: "Font Awesome 5 Free";
-  font-weight: 700;
+  font-weight: 900;
   font-size: 1em;
 }
 .info-btn {
@@ -605,4 +625,267 @@ footer .icon-instagram:hover {
   40% {
     transform: rotate(-15deg);
   }
+}
+/*MEDIA QUERYES*/
+@media (max-width: 320px) {
+  /* smartphones, portrait iPhone, portrait 480x320 phones (Android)  */
+  * {
+    max-width: 320px;
+  }
+  .header {
+    width: 85%;
+  }
+  .header .header-li:not(#name) {
+    display: none;
+  }
+  .header .li-contact {
+    display: none;
+  }
+  #hello {
+    display: flex;
+    flex-direction: column;
+  }
+  #hello h1 {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  #hello h2 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #4d5bce;
+    margin-bottom: 10px;
+  }
+  #hello p {
+    font-size: 0.9rem;
+    margin-bottom: 2px;
+    line-height: 1.4;
+  }
+  #hello #github-project {
+    display: none;
+  }
+  #hello .text-presentation {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .box-presentation {
+    width: 300px;
+    height: 400px;
+  }
+  .box-presentation .card {
+    width: 300px;
+    height: 400px;
+  }
+  .box-presentation .card input[type="checkbox"]:checked {
+    translate: -450%;
+  }
+  #sobre-mim {
+    max-width: 300px;
+    min-height: 500px;
+    height: auto;
+    padding-bottom: 30px;
+    padding-top: -30px;
+  }
+  #sobre-mim #name {
+    width: 290px;
+  }
+  .conteudo {
+    display: flex;
+    flex-direction: column;
+  }
+  #sobre-mim .header {
+    margin: 0;
+  }
+  #sobre-mim .header-li {
+    border-right: none;
+  }
+  .left-nav {
+    border-right: none;
+    max-height: 120px;
+    border-bottom: 1px solid #364758;
+    width: 290px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  #abrir-arquivo {
+    padding: 10px;
+    text-align: center;
+  }
+  #projeto {
+    height: auto;
+  }
+  #projeto h2 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+  }
+  .cards {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .card {
+    height: 800px;
+    margin-bottom: 20px;
+  }
+  .contato {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  #tipoAssunto,
+  #tipoPessoa {
+    max-width: 300px;
+    font-size: 1rem;
+  }
+  footer .header-li {
+    display: none;
+    border: none;
+    width: 290px;
+  }
+  footer .header-ul {
+    width: 290px;
+  }
+  .li-dev {
+    margin-left: -15px;
+    border: none;
+  }
+}
+@media (max-width: 480px) {
+  /* smartphones, Android phones, landscape iPhone */
+  * {
+    max-width: 480px;
+  }
+  .header {
+    width: 85%;
+  }
+  .header .header-li:not(#name) {
+    display: none;
+  }
+  .header .li-contact {
+    display: none;
+  }
+  #hello {
+    display: flex;
+    flex-direction: column;
+  }
+  #hello h1 {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  #hello h2 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #4d5bce;
+    margin-bottom: 10px;
+  }
+  #hello p {
+    font-size: 0.9rem;
+    margin-bottom: 2px;
+    line-height: 1.4;
+  }
+  #hello #github-project {
+    display: none;
+  }
+  #hello .text-presentation {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .box-presentation {
+    width: 300px;
+    height: 400px;
+  }
+  .box-presentation .card {
+    width: 300px;
+    height: 400px;
+  }
+  .box-presentation .card input[type="checkbox"]:checked {
+    translate: -450%;
+  }
+  #sobre-mim {
+    max-width: 420px;
+    min-height: 500px;
+    height: auto;
+    padding-bottom: 30px;
+    padding-top: -30px;
+  }
+  #sobre-mim #name {
+    width: 290px;
+  }
+  .conteudo {
+    display: flex;
+    flex-direction: column;
+  }
+  #sobre-mim .header {
+    margin: 0;
+  }
+  #sobre-mim .header-li {
+    border-right: none;
+  }
+  .left-nav {
+    border-right: none;
+    max-height: 120px;
+    border-bottom: 1px solid #364758;
+    width: 400px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  #abrir-arquivo {
+    padding: 10px;
+    text-align: center;
+  }
+  #projeto {
+    height: auto;
+  }
+  #projeto h2 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+  }
+  .cards {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .card {
+    height: 800px;
+    margin-bottom: 20px;
+  }
+  .contato {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  #tipoAssunto,
+  #tipoPessoa {
+    max-width: 300px;
+    font-size: 1rem;
+  }
+  footer .header-li {
+    display: none;
+    border: none;
+    width: 290px;
+  }
+  footer .header-ul {
+    width: 290px;
+  }
+  .li-dev {
+    margin-left: -15px;
+    border: none;
+  }
+}
+@media (max-width: 600px) {
+  /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x 480 phones (Android) */
+}
+@media (max-width: 801px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+}
+@media (max-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops */
+}
+@media (max-width: 1281px) {
+  /* hi-res laptops and desktops */
 }

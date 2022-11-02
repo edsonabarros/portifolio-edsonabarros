@@ -42,14 +42,15 @@
           <p>Olá! Eu me chamo</p>
           <h1>Edson Barros</h1>
           <h2>> Desenvolvedor Web</h2>
-          <p>// Projeto utilizando animações com css</p>
+          <p>// Projeto - LP Mundo Invertido </p>
+          <p>// LP criada para divulgação da nova temporada de Stranger Things </p>
           <p>
-            // Clique no botão para testar ou dê uma olhada no código lá no
+            // Clique no botão para ver a descrição, testar ou dar uma olhada no código lá no
             Github!
           </p>
           <div id="github-project">
             <p id="var">var</p>
-            <p id="gt-link">githubLink =</p>
+            <p id="gt-link">meuGitHub =</p>
             <p id="link-presentation">
               "<a href="https://github.com/edsonabarros"
                 >https://github.com/edsonabarros</a
@@ -58,6 +59,30 @@
           </div>
         </div>
         <div class="box-presentation">
+          <div class="card">
+            <input type="checkbox" name="" id="" />
+            <img
+              src="/assets/img/stranger_things_projeto.jpg"
+              alt="Card da LP Mundo Invertido"
+            />
+
+            <div class="side">
+              <h3>LP - Mundo Invertido</h3>
+              <p>
+                Projeto criado junto com a DIO para trabalhar a criação de
+                páginas com um HTML acessível e um CSS eficiente. Além disso,
+                utilizamos o Javascript para troca de tema
+              </p>
+              <br />
+              <p>Tecnologias: HTML, CSS e Javascript</p>
+              <a href=""><i class="fa-regular fa-circle-play play"></i></a>
+              <a
+                href="https://github.com/edsonabarros/lp-mundo-invertido"
+                target="_blank"
+                ><i class="fa-brands fa-github git"></i>
+              </a>
+            </div>
+          </div>
           <div class="circle" id="top-left"></div>
           <div class="circle" id="top-right"></div>
           <div class="circle" id="bottom-left"></div>
@@ -112,7 +137,7 @@
                   x
                 </button>
               </li>
-              <li class="header-li" id="habilidades">
+              <li class="header-li escondido" id="habilidades">
                 <img
                   class="img-header"
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
@@ -281,16 +306,16 @@
               25 <br />
             </p>
           </div>
-          <div id="teste">
-            TESTEEEEEE
-            <a href=""><i class="fa-brands fa-github"></i> </a>
+          <div id="abrir-arquivo">
+           <h3>Visual Studio Code</h3>
+           <p>Selecione um dos arquivos no menu para checar as informações!</p>
           </div>
         </div>
       </section>
       <!-- PROJETOS -->
       <section id="projeto">
         <h2>Projetos</h2>
-        <div class="cards">
+        <div class="cards"> 
           <div class="card">
             <input type="checkbox" name="" id="" />
             <img
@@ -359,6 +384,10 @@
               </a>
             </div>
           </div>
+
+          
+
+
         </div>
       </section>
       <!-- CONTATOS -->
@@ -393,7 +422,7 @@
               <select class="select" onchange="tipoPessoa(this) " name="tipoAssunto" id="tipoAssunto">
                 <option value="selecionar">Selecionar</option>
                 <option value="duvida">Gostaria de tirar uma dúvida!</option>
-                <option value="comeco">Estou começando! Gostaria de algumas dicas!</option>
+                <option value="comeco">Gostaria de algumas dicas!</option>
                 <option value="projeto">
                   Que tal fazer um projeto comigo?
                 </option>
@@ -414,9 +443,11 @@
             <a href="#" id="email" class="icon icon-email">
               <i class="fas fa-envelope-open-text"></i>
             </a>
-            <a class="info-btn" href="#abrirModal"> <i class=" info-email fa-regular fa-circle-info"></i></a>
+            <a class="info-btn" href="#informacaoEmail"> 
+              <i class="fa-regular fa-circle-info info-email"></i>
+            </a>
             
-            <div id="abrirModal" class="modal">
+            <div id="informacaoEmail" class="modal">
               <a href="#fechar" title="Fechar" class="fechar">x</a>
               <h3>E-mail</h3>
               <p>Para utilizar o botão de e-mail, você precisará de um cliente de e-mail instalado em seu computador ou celular.</p>
@@ -434,17 +465,17 @@
         <div class="header-nav">
           <ul class="header-ul">
             <li class="header-li redes-sociais-extra" id="name">
-              <a href="" class="icon icon-instagram">
+              <a href="https://www.instagram.com/_edsonabarros?r=nametag" class="icon icon-instagram">
                 <i class="fab fa-instagram"></i>
               </a>
-              <a href="" class="icon icon-git">
+              <a href="https://github.com/edsonabarros" class="icon icon-git">
                 <i class="fab fa-github-alt"></i>
               </a>
             </li>
           </ul>
-          <ul>
+          <ul class="mobile-remove">
             <li class="li-dev">
-              <a href="#">final dev = edsonabarros;</a>
+              <a href="#">const dev = edsonabarros;</a>
             </li>
           </ul>
         </div>

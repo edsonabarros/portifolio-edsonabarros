@@ -57,7 +57,7 @@ function abrirArquivo(idBotao, idArquivo, idEsconder, idEsconder2) {
   let esconderArquivo2 = document.getElementById(idEsconder2);
   let abrirArquivo = document.getElementById("abrir-arquivo");
 
-  if(screen.width > 879){
+  if(screen.width > 1200){
   valueBotao.style.display = "flex";
   valueArquivo.style.display = "block";
   esconderArquivo.style.display = "none";

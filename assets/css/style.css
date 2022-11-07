@@ -45,7 +45,7 @@
   width: 100%;
   max-width: 1200px;
   display: flex;
-  border: 0.1rem solid #364758;
+  border: 0.1rem solid #697886;
   border-radius: 5px;
   margin: 20px auto 0;
   height: 45px;
@@ -61,7 +61,7 @@
 .header-li {
   min-width: 130px;
   list-style: none;
-  border-right: 0.1rem solid #364758;
+  border-right: 0.1rem solid #697886;
   padding: 12px;
   margin-left: 5px;
   text-align: center;
@@ -70,7 +70,7 @@
   color: #fea55f;
 }
 .li-contact {
-  border-left: 0.1rem solid #364758;
+  border-left: 0.1rem solid #697886;
   width: 130px;
   list-style: none;
   padding: 12px;
@@ -80,14 +80,17 @@
 .li-contact:hover {
   color: #fea55f;
 }
+/* @bd: #364758; */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+img {
+  max-width: 100%;
+}
 body {
   max-height: 100vh;
-  max-width: 95vw;
   margin: 0 auto;
   background-color: #011221;
   font-family: "Fira Code", monospace;
@@ -152,7 +155,6 @@ body p {
 .box-presentation {
   width: 450px;
   height: 460px;
-  background-image: linear-gradient(#3c9d93, #4d5bce);
   border-radius: 20px;
   border: 0.5px solid black;
   position: relative;
@@ -177,9 +179,9 @@ body p {
 #sobre-mim {
   position: relative;
   max-width: 1200px;
-  border-bottom: 0.1rem solid #364758;
-  border-right: 0.1rem solid #364758;
-  border-left: 0.1rem solid #364758;
+  border-bottom: 0.1rem solid #697886;
+  border-right: 0.1rem solid #697886;
+  border-left: 0.1rem solid #697886;
   border-radius: 5px;
   height: 659px;
   margin-bottom: 30px;
@@ -189,8 +191,8 @@ body p {
   border: none;
   width: 100%;
   max-width: 1200px;
-  border-top: 0.1rem solid #364758;
-  border-bottom: 0.1rem solid #364758;
+  border-top: 0.1rem solid #697886;
+  border-bottom: 0.1rem solid #697886;
 }
 #sobre-mim .header-li {
   display: flex;
@@ -252,7 +254,7 @@ body p {
   width: 200px;
   height: 613px;
   list-style: none;
-  border-right: 0.1rem solid #364758;
+  border-right: 0.1rem solid #697886;
   padding: 12px;
   margin-left: 5px;
   text-align: justify;
@@ -288,7 +290,7 @@ body p {
   height: 15px;
 }
 #li-contact-sobre {
-  border-left: 0.1rem solid #364758;
+  border-left: 0.1rem solid #697886;
   width: 130px;
   list-style: none;
   padding: 12px;
@@ -334,7 +336,7 @@ body p {
 }
 .card {
   width: 300px;
-  height: 400px;
+  height: 450px;
   position: relative;
   overflow: hidden;
   border-radius: 15px;
@@ -558,7 +560,7 @@ body p {
   color: #e5e9f0;
 }
 .li-dev {
-  border-left: 0.1rem solid #364758;
+  border-left: 0.1rem solid #697886;
   width: 130px;
   list-style: none;
   padding: 12px;
@@ -571,7 +573,7 @@ body p {
   color: #fea55f;
 }
 footer {
-  margin-bottom: 10px;
+  padding-bottom: 15px;
 }
 footer .header-nav {
   display: flex;
@@ -616,18 +618,32 @@ footer .icon-instagram:hover {
 /*MEDIA QUERYES*/
 @media (max-width: 320px) {
   /* smartphones, portrait iPhone, portrait 480x320 phones (Android)  */
+  main {
+    overflow-x: hidden;
+    max-width: 320px;
+  }
   .header {
-    width: 85%;
+    width: 85vw;
+    margin-bottom: 30px;
   }
   .header .header-li:not(#name) {
     display: none;
   }
+  .header .header-nav {
+    justify-content: center;
+  }
   .header .li-contact {
     display: none;
+  }
+  .header .header-li p {
+    text-align: center;
   }
   #hello {
     display: flex;
     flex-direction: column;
+  }
+  #hello h1 {
+    font-size: 3rem;
   }
   #hello h2 {
     font-size: 1.3rem;
@@ -649,17 +665,19 @@ footer .icon-instagram:hover {
     text-align: center;
     align-items: center;
     margin-bottom: 10px;
+    margin-right: 0;
   }
   .box-presentation {
-    max-width: 300px;
-    height: 500px;
+    max-width: 290px;
+    max-height: 400px;
+    margin-bottom: 80px;
   }
   .box-presentation .card {
-    max-width: 300px;
-    height: 500px;
+    max-width: 290px;
+    max-height: 400px;
   }
   .box-presentation .card input[type="checkbox"]:checked {
-    translate: -10%;
+    translate: -480%;
   }
   #sobre-mim {
     max-width: 300px;
@@ -669,7 +687,7 @@ footer .icon-instagram:hover {
     padding-top: -30px;
   }
   #sobre-mim #name {
-    width: 95%;
+    width: 250px;
   }
   .conteudo {
     display: flex;
@@ -684,8 +702,8 @@ footer .icon-instagram:hover {
   .left-nav {
     border-right: none;
     max-height: 120px;
-    border-bottom: 1px solid #364758;
-    width: 100%;
+    border-bottom: 1px solid #697886;
+    width: 90vw;
     margin: 0 auto;
     margin-bottom: 20px;
   }
@@ -718,477 +736,21 @@ footer .icon-instagram:hover {
     max-width: 300px;
     font-size: 1rem;
   }
+  footer {
+    padding-bottom: 5px;
+  }
   footer .header-li {
     display: none;
     border: none;
   }
   .li-dev {
-    margin-left: 10px;
-    width: 100vw;
     border: none;
     font-size: 0.9em;
   }
 }
 @media (max-width: 480px) {
   /* smartphones, Android phones, landscape iPhone */
-  .header {
-    max-width: 90vw;
-  }
-  .header .header-li:not(#name) {
-    display: none;
-  }
-  .header .li-contact {
-    display: none;
-  }
-  #hello {
-    display: flex;
-    flex-direction: column;
-  }
-  #hello h2 {
-    font-size: 1.3rem;
-    font-weight: 400;
-    color: #4d5bce;
-    margin-bottom: 10px;
-  }
-  #hello p {
-    font-size: 0.9rem;
-    margin-bottom: 2px;
-    line-height: 1.4;
-  }
-  #hello #github-project {
-    display: none;
-  }
-  #hello .text-presentation {
-    margin-right: none;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    max-width: 100vw;
-    margin-bottom: 10px;
-  }
-  .box-presentation {
-    width: 70%;
-    height: 500px;
-  }
-  .box-presentation .card {
-    width: 100%;
-    height: 500px;
-  }
-  .box-presentation .card input[type="checkbox"]:checked {
-    translate: 80%;
-  }
-  #sobre-mim {
-    max-width: 90vw;
-    min-height: 500px;
-    height: auto;
-    padding-bottom: 30px;
-    padding-top: -30px;
-  }
-  #sobre-mim #name {
-    width: 290px;
-  }
-  .conteudo {
-    display: flex;
-    flex-direction: column;
-  }
-  #sobre-mim .header {
-    margin: 0;
-  }
-  #sobre-mim .header-li {
-    border-right: none;
-  }
-  .left-nav {
-    border-right: none;
-    max-height: 120px;
-    border-bottom: 1px solid #364758;
-    width: 100%;
-    margin: 0 auto;
-    margin-bottom: 20px;
-  }
-  #abrir-arquivo {
-    padding: 10px;
-    text-align: center;
-  }
-  #projeto {
-    height: auto;
-  }
-  #projeto h2 {
-    font-size: 1.3rem;
-    margin-bottom: 20px;
-  }
-  .cards {
-    height: auto;
-    display: flex;
-    flex-direction: column;
-  }
-  .card {
-    height: 800px;
-    margin-bottom: 20px;
-  }
-  .contato {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  #tipoAssunto,
-  #tipoPessoa {
-    max-width: 300px;
-    font-size: 1rem;
-  }
-  footer .header-li {
-    display: none;
-    border: none;
-    width: 290px;
-  }
-  footer .header-ul {
-    width: 290px;
-  }
-  .li-dev {
-    width: 90vw;
-    border: none;
-    font-size: 1em;
-  }
 }
 @media (max-width: 600px) {
   /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x 480 phones (Android) */
-  .header {
-    width: 90vw;
-  }
-  .header .header-li:not(#name) {
-    display: none;
-  }
-  .header .li-contact {
-    display: none;
-  }
-  #hello {
-    display: flex;
-    flex-direction: column;
-  }
-  #hello h2 {
-    font-size: 1.3rem;
-    font-weight: 400;
-    color: #4d5bce;
-    margin-bottom: 10px;
-  }
-  #hello p {
-    margin-bottom: 2px;
-    line-height: 1.4;
-  }
-  #hello #github-project {
-    display: none;
-  }
-  #hello .text-presentation {
-    margin-right: none;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    margin-bottom: 10px;
-  }
-  .box-presentation {
-    width: 70%;
-    height: 500px;
-  }
-  .box-presentation .card {
-    width: 100%;
-    height: 500px;
-  }
-  .box-presentation .card input[type="checkbox"]:checked {
-    translate: -280%;
-    margin-bottom: 1px;
-  }
-  #sobre-mim {
-    max-width: 90vw;
-    min-height: 500px;
-    height: auto;
-    padding-bottom: 30px;
-    padding-top: -30px;
-    margin-top: 10px;
-  }
-  #sobre-mim #name {
-    width: 290px;
-  }
-  .conteudo {
-    display: flex;
-    flex-direction: column;
-  }
-  #sobre-mim .header {
-    margin: 0;
-  }
-  #sobre-mim .header-li {
-    border-right: none;
-  }
-  .left-nav {
-    border-right: none;
-    max-height: 120px;
-    border-bottom: 1px solid #364758;
-    width: 100%;
-    margin: 0 auto;
-    margin-bottom: 20px;
-  }
-  #abrir-arquivo {
-    padding: 10px;
-    text-align: center;
-  }
-  #projeto {
-    height: auto;
-  }
-  #projeto h2 {
-    font-size: 1.3rem;
-    margin-bottom: 20px;
-  }
-  .cards {
-    height: auto;
-    display: flex;
-    flex-direction: column;
-  }
-  .card {
-    height: 800px;
-    margin-bottom: 20px;
-  }
-  .contato {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  #tipoAssunto,
-  #tipoPessoa {
-    max-width: 300px;
-    font-size: 1rem;
-  }
-  footer .header-li {
-    display: none;
-    border: none;
-  }
-  .li-dev {
-    width: 90vw;
-    margin-left: -15px;
-    border: none;
-    font-size: 1em;
-  }
-}
-@media (max-width: 801px) {
-  /* tablet, landscape iPad, lo-res laptops ands desktops */
-  .header {
-    width: 90vw;
-  }
-  .header .header-li:not(#name) {
-    display: none;
-  }
-  .header .li-contact {
-    display: none;
-  }
-  #hello {
-    display: flex;
-    flex-direction: column;
-  }
-  #hello h1 {
-    font-size: 2rem;
-    font-weight: 500;
-  }
-  #hello h2 {
-    font-size: 1.3rem;
-    font-weight: 400;
-    color: #4d5bce;
-    margin-bottom: 10px;
-  }
-  #hello p {
-    margin-bottom: 2px;
-    line-height: 1.4;
-  }
-  #hello #github-project {
-    display: none;
-  }
-  #hello .text-presentation {
-    margin-right: none;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    margin-bottom: 10px;
-  }
-  .box-presentation {
-    width: 70%;
-    height: 500px;
-  }
-  .box-presentation .card {
-    width: 100%;
-    height: 500px;
-  }
-  .box-presentation .card input[type="checkbox"]:checked {
-    translate: -280%;
-    margin-bottom: 1px;
-  }
-  #sobre-mim {
-    max-width: 90vw;
-    min-height: 500px;
-    height: auto;
-    padding-bottom: 30px;
-    padding-top: -30px;
-    margin-top: 10px;
-  }
-  #sobre-mim #name {
-    width: 290px;
-  }
-  .conteudo {
-    display: flex;
-    flex-direction: column;
-  }
-  #sobre-mim .header {
-    margin: 0;
-  }
-  #sobre-mim .header-li {
-    border-right: none;
-  }
-  .left-nav {
-    border-right: none;
-    max-height: 120px;
-    border-bottom: 1px solid #364758;
-    width: 100%;
-    margin: 0 auto;
-    margin-bottom: 20px;
-  }
-  #abrir-arquivo {
-    padding: 10px;
-    text-align: center;
-  }
-  #projeto {
-    height: auto;
-  }
-  #projeto h2 {
-    font-size: 1.3rem;
-    margin-bottom: 20px;
-  }
-  .cards {
-    height: auto;
-    display: flex;
-    flex-direction: column;
-  }
-  .card {
-    height: 800px;
-    margin-bottom: 20px;
-  }
-  .contato {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  #tipoAssunto,
-  #tipoPessoa {
-    max-width: 300px;
-    font-size: 1rem;
-  }
-}
-@media (max-width: 1025px) {
-  /* big landscape tablets, laptops, and desktops */
-  .header {
-    width: 90vw;
-  }
-  .header .header-li:not(#name) {
-    display: none;
-  }
-  .header .li-contact {
-    display: none;
-  }
-  #hello {
-    display: flex;
-    flex-direction: column;
-  }
-  #hello h1 {
-    font-size: 2rem;
-    font-weight: 500;
-  }
-  #hello h2 {
-    font-size: 1.3rem;
-    font-weight: 400;
-    color: #4d5bce;
-    margin-bottom: 10px;
-  }
-  #hello p {
-    margin-bottom: 2px;
-    line-height: 1.4;
-  }
-  #hello #github-project {
-    display: none;
-  }
-  #hello .text-presentation {
-    margin-right: none;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    margin-bottom: 10px;
-  }
-  .box-presentation {
-    width: 70%;
-    height: 500px;
-  }
-  .box-presentation .card {
-    width: 100%;
-    height: 500px;
-  }
-  .box-presentation .card input[type="checkbox"]:checked {
-    translate: -280%;
-    margin-bottom: 1px;
-  }
-  #sobre-mim {
-    max-width: 90vw;
-    min-height: 500px;
-    height: auto;
-    padding-bottom: 30px;
-    padding-top: -30px;
-    margin-top: 10px;
-  }
-  #sobre-mim #name {
-    width: 290px;
-  }
-  .conteudo {
-    display: flex;
-    flex-direction: column;
-  }
-  #sobre-mim .header {
-    margin: 0;
-  }
-  #sobre-mim .header-li {
-    border-right: none;
-  }
-  .left-nav {
-    border-right: none;
-    max-height: 120px;
-    border-bottom: 1px solid #364758;
-    width: 100%;
-    margin: 0 auto;
-    margin-bottom: 20px;
-  }
-  #abrir-arquivo {
-    padding: 10px;
-    text-align: center;
-  }
-  #projeto {
-    height: auto;
-  }
-  #projeto h2 {
-    font-size: 1.3rem;
-    margin-bottom: 20px;
-  }
-  .cards {
-    height: auto;
-    display: flex;
-    flex-direction: column;
-  }
-  .card {
-    height: 800px;
-    margin-bottom: 20px;
-  }
-  .contato {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  #tipoAssunto,
-  #tipoPessoa {
-    max-width: 300px;
-    font-size: 1rem;
-  }
 }

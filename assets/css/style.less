@@ -122,8 +122,7 @@ body {
   border-left: 0.1rem solid @bd;
   border-radius: 5px;
   height: 659px;
-  .mb(30px);
-  .ma;
+  margin: 10px auto;
 
   .header {
     border: none;
@@ -277,7 +276,7 @@ body {
 
 #projeto {
   margin: 90px 0 10px;
-  height: 500px;
+  height: 700px;
 }
 
 #projeto h2 {
@@ -287,7 +286,7 @@ body {
 
 .cards {
   height: 500px;
-  max-height: 1000px;
+  max-height: 2000px;
   max-width: 1200px;
   .ma;
   .flex-bt-c;
@@ -399,7 +398,7 @@ body {
   font-size: 0.8em;
 }
 
-.contato {
+#contato {
   .wdt;
   .ma;
   height: 700px;
@@ -409,7 +408,7 @@ body {
   transition: 1s;
 }
 
-.contato h3 {
+#contato h3 {
   font-size: 2rem;
   .mb(50px);
   text-align: center;
@@ -637,13 +636,11 @@ footer .icon-instagram:hover {
   .header .header-li p {
     text-align: center;
   }
-  
 
   #hello {
-    display: flex;
     flex-direction: column;
 
-    h1{
+    h1 {
       font-size: 3rem;
     }
 
@@ -664,7 +661,7 @@ footer .icon-instagram:hover {
     display: none;
   }
 
-#hello .text-presentation {
+  #hello .text-presentation {
     margin-right: none;
     display: flex;
     flex-direction: column;
@@ -677,7 +674,7 @@ footer .icon-instagram:hover {
   .box-presentation {
     max-width: 290px;
     max-height: 400px;
-    .mb(80px);
+    .mb(20px);
   }
 
   .box-presentation .card {
@@ -686,15 +683,162 @@ footer .icon-instagram:hover {
   }
 
   .box-presentation .card input[type="checkbox"]:checked {
-    translate: -480%;
+    translate: -470%;
   }
 
   #sobre-mim {
     max-width: 300px;
-    min-height: 500px;
+    /*     min-height: 500px;
     height: auto;
     padding-bottom: 30px;
-    padding-top: -30px;
+    padding-top: -30px; */
+  }
+
+  #sobre-mim #name {
+    width: 250px;
+  }
+
+  .conteudo {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #sobre-mim .header {
+    margin: 0;
+  }
+
+  #sobre-mim .header-li {
+    border-right: none;
+  }
+
+  .left-nav {
+    border-right: none;
+    max-height: 120px;
+    border-bottom: 1px solid @bd;
+    width: 95vw;
+    .ma;
+    .mb(20px);
+  }
+
+  #abrir-arquivo {
+    padding: 10px;
+    text-align: center;
+  }
+
+  #projeto h2 {
+    font-size: 1.3rem;
+    .mb(20px);
+  }
+
+  .card {
+    .mb(20px);
+  }
+
+  #contato {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  #tipoAssunto,
+  #tipoPessoa {
+    max-width: 300px;
+    font-size: 1rem;
+  }
+  footer .header-li {
+    display: none;
+    border: none;
+  }
+
+  .li-dev {
+    border: none;
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  /* smartphones, Android phones, landscape iPhone */
+  main {
+    overflow-x: hidden;
+    max-width: 480px;
+  }
+
+  .header {
+    width: 85vw;
+    .mb(30px);
+  }
+
+  .header .header-li:not(#name) {
+    display: none;
+  }
+
+  .header .header-nav {
+    justify-content: center;
+  }
+
+  .header .li-contact {
+    display: none;
+  }
+
+  .header .header-li p {
+    text-align: center;
+  }
+
+  #hello {
+    flex-direction: column;
+
+    h1 {
+      font-size: 3rem;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+      font-weight: 400;
+      color: @gd-final;
+      .mb(10px);
+    }
+
+    p {
+      .mb(2px);
+      line-height: 1.4;
+    }
+  }
+
+  #hello #github-project {
+    display: none;
+  }
+
+  #hello .text-presentation {
+    margin-right: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    .mb(10px);
+    margin-right: 0;
+  }
+
+  .box-presentation {
+    max-width: 320px;
+    max-height: 400px;
+    .mb(20px);
+  }
+
+  .box-presentation .card {
+    max-width: 320px;
+    max-height: 400px;
+  }
+
+  .box-presentation .card input[type="checkbox"]:checked {
+    translate: -470%;
+  }
+
+  #sobre-mim {
+    max-width: 430px;
+    /*     min-height: 500px;
+    height: auto;
+    padding-bottom: 30px;
+    padding-top: -30px; */
   }
 
   #sobre-mim #name {
@@ -728,6 +872,395 @@ footer .icon-instagram:hover {
     text-align: center;
   }
 
+  #projeto h2 {
+    font-size: 1.3rem;
+    .mb(20px);
+  }
+
+  .card {
+    .mb(20px);
+  }
+
+  #contato {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  #tipoAssunto,
+  #tipoPessoa {
+    max-width: 430px;
+    font-size: 1rem;
+  }
+  footer .header-li {
+    display: none;
+    border: none;
+  }
+
+  .li-dev {
+    border: none;
+    font-size: 0.9em;
+  }
+}
+@media (max-width: 600px) {
+  /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x 480 phones (Android) */
+
+  main {
+    overflow-x: hidden;
+    max-width: 600px;
+  }
+
+  .header {
+    width: 85vw;
+    .mb(30px);
+  }
+
+  .header .header-li:not(#name) {
+    display: none;
+  }
+
+  .header .header-nav {
+    justify-content: center;
+  }
+
+  .header .li-contact {
+    display: none;
+  }
+
+  .header .header-li p {
+    text-align: center;
+  }
+
+  #hello {
+    flex-direction: column;
+
+    h1 {
+      font-size: 4rem;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+      font-weight: 400;
+      color: @gd-final;
+      .mb(10px);
+    }
+
+    p {
+      .mb(2px);
+      line-height: 1.4;
+    }
+  }
+
+  #hello #github-project {
+    display: none;
+  }
+
+  #hello .text-presentation {
+    margin-right: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    .mb(10px);
+    margin-right: 0;
+  }
+
+  .box-presentation {
+    .mb(20px);
+  }
+
+  .box-presentation .card input[type="checkbox"]:checked {
+    translate: -470%;
+  }
+
+  #sobre-mim {
+    max-width: 550px;
+  }
+
+  #sobre-mim #name {
+    width: 250px;
+  }
+
+  .conteudo {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #sobre-mim .header {
+    margin: 0;
+  }
+
+  #sobre-mim .header-li {
+    border-right: none;
+  }
+
+  .left-nav {
+    border-right: none;
+    max-height: 120px;
+    border-bottom: 1px solid @bd;
+    width: 90vw;
+    .ma;
+    .mb(20px);
+  }
+
+  #abrir-arquivo {
+    padding: 10px;
+    text-align: center;
+  }
+
+  #projeto h2 {
+    font-size: 1.3rem;
+    .mb(20px);
+  }
+
+  .card {
+    .mb(20px);
+  }
+
+  #contato {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  #tipoAssunto,
+  #tipoPessoa {
+    max-width: 550px;
+    font-size: 1rem;
+  }
+  footer .header-li {
+    display: none;
+    border: none;
+  }
+
+  .li-dev {
+    border: none;
+    font-size: 0.9em;
+  }
+}
+@media (max-width: 870px) {
+  main {
+    overflow-x: hidden;
+    max-width: 870px;
+  }
+
+  .header {
+    width: 95vw;
+    .mb(30px);
+  }
+
+  .header .header-li:not(#name) {
+    display: none;
+  }
+
+  .header .li-contact {
+    display: none;
+  }
+
+
+  #hello {
+    flex-direction: column;
+
+    h1 {
+      font-size: 3rem;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+      font-weight: 400;
+      color: @gd-final;
+      .mb(10px);
+    }
+
+    p {
+      .mb(2px);
+      line-height: 1.4;
+    }
+  }
+
+  #hello #github-project {
+    display: none;
+  }
+
+  .box-presentation {
+    .mb(20px);
+  }
+
+  .box-presentation .card input[type="checkbox"]:checked {
+    translate: -470%;
+  }
+
+  #sobre-mim {
+    max-width: 750px;
+  }
+
+  #sobre-mim #name {
+    width: 250px;
+  }
+
+  .conteudo {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #sobre-mim .header {
+    margin: 0;
+  }
+
+  #sobre-mim .header-li {
+    border-right: none;
+  }
+
+  #sobre-mim {
+    margin: 2px auto;
+  }
+
+  .left-nav {
+    border-right: none;
+    max-height: 120px;
+    border-bottom: 1px solid @bd;
+    width: 95vw;
+    .ma;
+    .mb(20px);
+  }
+
+  #abrir-arquivo {
+    padding: 10px;
+    text-align: center;
+  }
+
+  #projeto h2 {
+    font-size: 1.3rem;
+    .mb(20px);
+  }
+
+  .card {
+    .mb(20px);
+  }
+
+  #contato {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  #tipoAssunto,
+  #tipoPessoa {
+    max-width: 550px;
+    font-size: 1rem;
+  }
+/*   footer .header-li {
+    display: none;
+    border: none;
+  }
+*/
+  .li-dev {
+    border: none;
+    font-size: 0.9em;
+  } 
+}
+@media (max-width: 1044px) {
+  main {
+    overflow-x: hidden;
+    max-width: 1025px;
+  }
+
+  .header {
+    width: 85vw;
+    .mb(30px);
+  }
+
+  .header .header-li p {
+    text-align: center;
+  }
+
+  #hello {
+    flex-direction: column;
+
+    h2 {
+      font-size: 1.6rem;
+      font-weight: 400;
+      color: @gd-final;
+      .mb(10px);
+    }
+
+    p {
+      .mb(2px);
+      line-height: 1.6;
+    }
+  }
+
+  #hello #github-project {
+    display: none;
+  }
+
+  #hello .text-presentation {
+    margin-right: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    .mb(10px);
+    margin-right: 0;
+  }
+
+  .box-presentation {
+    max-width: 320px;
+    max-height: 450px;
+    .mb(15px);
+  }
+
+  .box-presentation .card {
+    max-width: 320px;
+    max-height: 450px;
+  }
+
+  .box-presentation .card input[type="checkbox"]:checked {
+    translate: -470%;
+  }
+
+  #sobre-mim {
+    max-width: 1000px;
+    min-height: 500px;
+    height: auto;
+    padding-bottom: 30px;
+  }
+
+  #sobre-mim #name {
+    width: 250px;
+  }
+
+  .li-contact {
+    border-left: none;
+  }
+
+  .conteudo {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #sobre-mim .header {
+    margin: 0;
+  }
+
+  /*   #sobre-mim .header-li {
+    border-right: none;
+  }
+ */
+  .left-nav {
+    border-right: none;
+    max-height: 120px;
+    border-bottom: 1px solid @bd;
+    width: 96vw;
+    .ma;
+    .mb(20px);
+  }
+
+  #abrir-arquivo {
+    padding: 10px;
+    text-align: center;
+  }
+
   #projeto {
     height: auto;
   }
@@ -747,7 +1280,7 @@ footer .icon-instagram:hover {
     .mb(20px);
   }
 
-  .contato {
+  #contato {
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -755,32 +1288,7 @@ footer .icon-instagram:hover {
 
   #tipoAssunto,
   #tipoPessoa {
-    max-width: 300px;
+    max-width: 550px;
     font-size: 1rem;
   }
-
-  footer{
-  padding-bottom: 5px;
-  }
-
-  footer .header-li {
-    display: none;
-    border: none;
-  }
-
-  .li-dev {
-    border: none;
-    font-size: 0.9em;
-  }
-}
-
-@media (max-width: 480px) {
-  /* smartphones, Android phones, landscape iPhone */
-}
-@media (max-width: 600px) {
-  /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x 480 phones (Android) */
-}
-@media (max-width: 801px) {
-}
-@media (max-width: 1025px) {
 }

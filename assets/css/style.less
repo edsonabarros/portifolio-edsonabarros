@@ -35,6 +35,15 @@ body {
   }
 }
 
+.topnav {
+  overflow: hidden;
+  position: relative;
+}
+
+#icon-menu {
+  display: none;
+}
+
 #name {
   width: 200px;
   text-align: left;
@@ -61,6 +70,14 @@ body {
     max-width: 650px;
     margin-right: 20px;
   }
+}
+
+/* Style navigation menu links */
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #04aa6d;
+  color: white;
 }
 
 .page-hello {
@@ -104,7 +121,10 @@ body {
 }
 
 .box-presentation .card input[type="checkbox"]:checked {
-  translate: -870%;
+  /*   translate: -870%; */
+  position: absolute;
+  bottom: 10px;
+  left: 100px;
 }
 .circle {
   position: relative;
@@ -289,7 +309,7 @@ body {
   max-height: 2000px;
   max-width: 1200px;
   .ma;
-  .flex-bt-c;
+  .flex-ar-c;
 }
 
 .card {
@@ -331,7 +351,10 @@ body {
 }
 
 .card input[type="checkbox"]:checked {
-  translate: -460%;
+  /* translate: -460%; */
+  position: absolute;
+  bottom: 11px;
+  left: 55px;
 }
 
 .card input[type="checkbox"]::before {
@@ -354,16 +377,16 @@ body {
 
 .card .git {
   position: absolute;
-  bottom: 15px;
-  right: 20px;
+  bottom: 14px;
+  right: 15px;
   font-size: xx-large;
   z-index: 2;
 }
 
 .card .play {
   position: absolute;
-  bottom: 15px;
-  right: 70px;
+  bottom: 14px;
+  right: 65px;
   font-size: xx-large;
   z-index: 2;
 }
@@ -671,27 +694,8 @@ footer .icon-instagram:hover {
     margin-right: 0;
   }
 
-  .box-presentation {
-    max-width: 290px;
-    max-height: 400px;
-    .mb(20px);
-  }
-
-  .box-presentation .card {
-    max-width: 290px;
-    max-height: 400px;
-  }
-
-  .box-presentation .card input[type="checkbox"]:checked {
-    translate: -470%;
-  }
-
   #sobre-mim {
     max-width: 300px;
-    /*     min-height: 500px;
-    height: auto;
-    padding-bottom: 30px;
-    padding-top: -30px; */
   }
 
   #sobre-mim #name {
@@ -818,27 +822,8 @@ footer .icon-instagram:hover {
     margin-right: 0;
   }
 
-  .box-presentation {
-    max-width: 320px;
-    max-height: 400px;
-    .mb(20px);
-  }
-
-  .box-presentation .card {
-    max-width: 320px;
-    max-height: 400px;
-  }
-
-  .box-presentation .card input[type="checkbox"]:checked {
-    translate: -470%;
-  }
-
   #sobre-mim {
     max-width: 430px;
-    /*     min-height: 500px;
-    height: auto;
-    padding-bottom: 30px;
-    padding-top: -30px; */
   }
 
   #sobre-mim #name {
@@ -969,10 +954,6 @@ footer .icon-instagram:hover {
     .mb(20px);
   }
 
-  .box-presentation .card input[type="checkbox"]:checked {
-    translate: -470%;
-  }
-
   #sobre-mim {
     max-width: 550px;
   }
@@ -1057,7 +1038,6 @@ footer .icon-instagram:hover {
     display: none;
   }
 
-
   #hello {
     flex-direction: column;
 
@@ -1078,16 +1058,14 @@ footer .icon-instagram:hover {
     }
   }
 
+  #icon-menu {
+    display: block;
+    margin: 15px 15px;
+
+  }
+
   #hello #github-project {
     display: none;
-  }
-
-  .box-presentation {
-    .mb(20px);
-  }
-
-  .box-presentation .card input[type="checkbox"]:checked {
-    translate: -470%;
   }
 
   #sobre-mim {
@@ -1149,7 +1127,7 @@ footer .icon-instagram:hover {
     max-width: 550px;
     font-size: 1rem;
   }
-/*   footer .header-li {
+  /*   footer .header-li {
     display: none;
     border: none;
   }
@@ -1157,8 +1135,9 @@ footer .icon-instagram:hover {
   .li-dev {
     border: none;
     font-size: 0.9em;
-  } 
+  }
 }
+
 @media (max-width: 1044px) {
   main {
     overflow-x: hidden;
@@ -1205,18 +1184,18 @@ footer .icon-instagram:hover {
   }
 
   .box-presentation {
-    max-width: 320px;
+    max-width: 70%;
     max-height: 450px;
     .mb(15px);
   }
 
   .box-presentation .card {
-    max-width: 320px;
+    max-width: 100%;
     max-height: 450px;
   }
 
   .box-presentation .card input[type="checkbox"]:checked {
-    translate: -470%;
+    left: 75px;
   }
 
   #sobre-mim {
@@ -1224,6 +1203,7 @@ footer .icon-instagram:hover {
     min-height: 500px;
     height: auto;
     padding-bottom: 30px;
+    .mt(20px);
   }
 
   #sobre-mim #name {
@@ -1243,10 +1223,6 @@ footer .icon-instagram:hover {
     margin: 0;
   }
 
-  /*   #sobre-mim .header-li {
-    border-right: none;
-  }
- */
   .left-nav {
     border-right: none;
     max-height: 120px;
@@ -1277,7 +1253,24 @@ footer .icon-instagram:hover {
   }
 
   .card {
+    max-width: 100%;
     .mb(20px);
+  }
+
+  /*   .card {
+    width: 300px;
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+  } */
+
+  .card .git {
+    bottom: 14px;
+  }
+
+  .card .play {
+    bottom: 14px;
   }
 
   #contato {

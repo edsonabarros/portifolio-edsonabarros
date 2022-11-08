@@ -108,6 +108,13 @@ body p {
   margin: 5px;
   font-size: 1em;
 }
+.topnav {
+  overflow: hidden;
+  position: relative;
+}
+#icon-menu {
+  display: none;
+}
 #name {
   width: 200px;
   text-align: left;
@@ -132,6 +139,12 @@ body p {
 #hello .text-presentation {
   max-width: 650px;
   margin-right: 20px;
+}
+/* Style navigation menu links */
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #04aa6d;
+  color: white;
 }
 .page-hello {
   border-bottom: 0.1rem solid #e99287;
@@ -167,7 +180,10 @@ body p {
   border-radius: 15px;
 }
 .box-presentation .card input[type="checkbox"]:checked {
-  translate: -870%;
+  /*   translate: -870%; */
+  position: absolute;
+  bottom: 10px;
+  left: 100px;
 }
 .circle {
   position: relative;
@@ -330,7 +346,7 @@ body p {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 .card {
@@ -369,7 +385,10 @@ body p {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.238);
 }
 .card input[type="checkbox"]:checked {
-  translate: -460%;
+  /* translate: -460%; */
+  position: absolute;
+  bottom: 11px;
+  left: 55px;
 }
 .card input[type="checkbox"]::before {
   content: "\f129";
@@ -388,15 +407,15 @@ body p {
 }
 .card .git {
   position: absolute;
-  bottom: 15px;
-  right: 20px;
+  bottom: 14px;
+  right: 15px;
   font-size: xx-large;
   z-index: 2;
 }
 .card .play {
   position: absolute;
-  bottom: 15px;
-  right: 70px;
+  bottom: 14px;
+  right: 65px;
   font-size: xx-large;
   z-index: 2;
 }
@@ -665,24 +684,8 @@ footer .icon-instagram:hover {
     margin-bottom: 10px;
     margin-right: 0;
   }
-  .box-presentation {
-    max-width: 290px;
-    max-height: 400px;
-    margin-bottom: 20px;
-  }
-  .box-presentation .card {
-    max-width: 290px;
-    max-height: 400px;
-  }
-  .box-presentation .card input[type="checkbox"]:checked {
-    translate: -470%;
-  }
   #sobre-mim {
     max-width: 300px;
-    /*     min-height: 500px;
-    height: auto;
-    padding-bottom: 30px;
-    padding-top: -30px; */
   }
   #sobre-mim #name {
     width: 250px;
@@ -785,24 +788,8 @@ footer .icon-instagram:hover {
     margin-bottom: 10px;
     margin-right: 0;
   }
-  .box-presentation {
-    max-width: 320px;
-    max-height: 400px;
-    margin-bottom: 20px;
-  }
-  .box-presentation .card {
-    max-width: 320px;
-    max-height: 400px;
-  }
-  .box-presentation .card input[type="checkbox"]:checked {
-    translate: -470%;
-  }
   #sobre-mim {
     max-width: 430px;
-    /*     min-height: 500px;
-    height: auto;
-    padding-bottom: 30px;
-    padding-top: -30px; */
   }
   #sobre-mim #name {
     width: 250px;
@@ -908,9 +895,6 @@ footer .icon-instagram:hover {
   .box-presentation {
     margin-bottom: 20px;
   }
-  .box-presentation .card input[type="checkbox"]:checked {
-    translate: -470%;
-  }
   #sobre-mim {
     max-width: 550px;
   }
@@ -996,14 +980,12 @@ footer .icon-instagram:hover {
     margin-bottom: 2px;
     line-height: 1.4;
   }
+  #icon-menu {
+    display: block;
+    margin: 15px 15px;
+  }
   #hello #github-project {
     display: none;
-  }
-  .box-presentation {
-    margin-bottom: 20px;
-  }
-  .box-presentation .card input[type="checkbox"]:checked {
-    translate: -470%;
   }
   #sobre-mim {
     max-width: 750px;
@@ -1101,22 +1083,23 @@ footer .icon-instagram:hover {
     margin-right: 0;
   }
   .box-presentation {
-    max-width: 320px;
+    max-width: 70%;
     max-height: 450px;
     margin-bottom: 15px;
   }
   .box-presentation .card {
-    max-width: 320px;
+    max-width: 100%;
     max-height: 450px;
   }
   .box-presentation .card input[type="checkbox"]:checked {
-    translate: -470%;
+    left: 75px;
   }
   #sobre-mim {
     max-width: 1000px;
     min-height: 500px;
     height: auto;
     padding-bottom: 30px;
+    margin-top: 20px;
   }
   #sobre-mim #name {
     width: 250px;
@@ -1131,10 +1114,6 @@ footer .icon-instagram:hover {
   #sobre-mim .header {
     margin: 0;
   }
-  /*   #sobre-mim .header-li {
-    border-right: none;
-  }
- */
   .left-nav {
     border-right: none;
     max-height: 120px;
@@ -1160,7 +1139,21 @@ footer .icon-instagram:hover {
     flex-direction: column;
   }
   .card {
+    max-width: 100%;
     margin-bottom: 20px;
+  }
+  /*   .card {
+    width: 300px;
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+  } */
+  .card .git {
+    bottom: 14px;
+  }
+  .card .play {
+    bottom: 14px;
   }
   #contato {
     justify-content: center;

@@ -1,8 +1,11 @@
 function menuHamburger() {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "flex") {
-    x.style.display = "none";
+  const ul = document.querySelector(".header-ul");
+  const btnMenu = document.querySelector(".icon-menu i");
+
+  if (ul.classList.contains("open")) {
+    ul.classList.remove("open");
+    console.log(ul);
   } else {
-    x.style.display = "flex";
+    ul.classList.add("open");
   }
-} 
+}

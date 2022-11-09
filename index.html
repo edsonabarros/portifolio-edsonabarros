@@ -15,30 +15,29 @@
   <body>
     <!-- HEADER -->
     <header class="header">
-      <nav class="header-nav topnav">
-        <ul class="header-ul">
+      <nav class="header-nav">
+        <ul class="header-ul" id="menu-hamb">
           <li class="header-li" id="name">
             <a href="#"> edsonabarros</a>
           </li>
-          <li class="header-li page-hello">
+          <li class="header-li li-top-menu page-hello">
             <a href="#hello" class="mobile"> _hello</a>
           </li>
-          <li class="header-li">
+          <li class="header-li li-top-menu">
             <a href="#sobre-mim" class="mobile"> _sobre-mim</a>
           </li>
-          <li class="header-li"><a href="#projeto" class="mobile">_projetos</a></li>
+          <li class="header-li li-top-menu"><a href="#projeto" class="mobile">_projetos</a></li>
           
         </ul>
         <ul>
-          <li class="li-contact">
+          <li class="li-contact li-top-menu"">
             <a href="#contato" class="mobile" >_contato</a>
 
           </li>
-          <a href="javascript:void(0);" id="icon-menu" onclick="menuHamburger()">
-            <i class="fa fa-bars"></i>
-          </a>
         </ul>
-
+        <a class="icon-menu" onclick="menuHamburger()">
+          <i class="fa fa-bars"></i>
+        </a>
       </nav>
     </header>
     <main>
@@ -487,5 +486,6 @@
 
     <script src="assets/js/sobre.js"></script>
     <script src="assets/js/contato.js"></script>
+    <script src="assets/js/menu.js"></script>
   </body>
 </html>

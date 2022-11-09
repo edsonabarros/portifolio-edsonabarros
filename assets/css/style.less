@@ -37,18 +37,15 @@ body {
   }
 }
 
-.topnav {
-  overflow: hidden;
-  position: relative;
-}
 
-#icon-menu {
-  display: none;
-}
 
 #name {
   width: 200px;
   text-align: left;
+}
+
+.icon-menu {
+  display: none;
 }
 
 #hello {
@@ -644,9 +641,9 @@ footer .icon-instagram:hover {
     .mb(30px);
   }
 
-  .header .header-li:not(#name) {
+/*   .header .header-li:not(#name) {
     display: none;
-  }
+  } */
 
   .header .li-contact {
     display: none;
@@ -774,9 +771,9 @@ footer .icon-instagram:hover {
     .mb(30px);
   }
 
-  .header .header-li:not(#name) {
+/*   .header .header-li:not(#name) {
     display: none;
-  }
+  } */
 
   .header .li-contact {
     display: none;
@@ -902,13 +899,15 @@ footer .icon-instagram:hover {
     .mb(30px);
   }
 
-  .header .header-li:not(#name) {
+/*   .header .header-li:not(#name) {
     display: none;
   }
+ */
 
-  .header .li-contact {
+
+/*   .header .li-contact {
     display: none;
-  }
+  } */
 
   .header .header-li p {
     text-align: center;
@@ -1028,14 +1027,36 @@ footer .icon-instagram:hover {
     .mb(30px);
   }
 
-  .header .header-li:not(#name) {
+/*   .header .header-li:not(#name) {
     display: none;
   }
 
   .header .li-contact {
     display: none;
-  }
+  } */
+ 
 
+
+  .header .header-ul{
+    position: fixed;
+    top: 80px;
+    left: -120%;
+    background-color: #003840;
+    height: 100vw;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  
+  .header .header-ul.open{
+    left: 0;
+    z-index: 9999;
+  }
+  
+  .header .header-li{
+    width: 100%;
+  }
   #hello {
     flex-direction: column;
 
@@ -1056,9 +1077,10 @@ footer .icon-instagram:hover {
     }
   }
 
-  #icon-menu {
+  .icon-menu {
     display: block;
     margin: 15px 15px;
+    cursor: pointer;
   }
 
   #hello #github-project {

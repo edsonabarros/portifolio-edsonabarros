@@ -57,11 +57,12 @@
 }
 .header-ul {
   display: flex;
+  justify-content: space-between;
 }
 .header-li {
   min-width: 130px;
   list-style: none;
-  border-right: 0.1rem solid #697886;
+  border-left: 0.1rem solid #697886;
   padding: 12px;
   margin-left: 5px;
   text-align: center;
@@ -76,6 +77,7 @@
   padding: 12px;
   margin-left: 5px;
   text-align: center;
+  align-self: flex-end;
 }
 .li-contact:hover {
   color: #fea55f;
@@ -96,7 +98,7 @@ body {
   background-color: #011221;
   font-family: "Fira Code", monospace;
   color: #e5e9f0;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 body h1 {
   font-size: 4em;
@@ -113,6 +115,8 @@ body p {
 #name {
   width: 200px;
   text-align: left;
+  border-right: 0.1rem solid #697886;
+  border-left: none;
 }
 .icon-menu {
   display: none;
@@ -579,6 +583,7 @@ body p {
   padding: 12px;
   margin-left: 5px;
   text-align: center;
+  align-self: flex-end;
   width: 300px;
   /*   border-left: none; */
 }
@@ -958,23 +963,30 @@ footer .icon-instagram:hover {
   .header .li-contact {
     display: none;
   } */
-  .header .header-ul {
-    position: fixed;
-    top: 80px;
-    left: -120%;
-    background-color: #003840;
-    height: 100vw;
-    width: 100%;
+  .header .ul-menu {
+    position: absolute;
+    top: 70px;
+    left: -100%;
+    background-color: #011221;
+    height: 175px;
+    width: 85%;
+    margin: 0 auto;
     text-align: center;
     display: block;
     transition: all 0.3s ease;
+    border: 0.1rem solid #697886;
   }
-  .header .header-ul.open {
-    left: 0;
+  .header .ul-menu.open {
+    left: 7.5%;
     z-index: 9999;
   }
-  .header .header-li {
-    width: 100%;
+  .header .li-top-menu {
+    width: 99%;
+    border-left: none;
+    border-bottom: 0.1rem solid #697886;
+  }
+  .header .teste {
+    border-bottom: none;
   }
   #hello {
     flex-direction: column;

@@ -1,11 +1,17 @@
 function menuHamburger() {
-  const ul = document.querySelector(".header-ul");
-  const btnMenu = document.querySelector(".icon-menu i");
-
-  if (ul.classList.contains("open")) {
-    ul.classList.remove("open");
+  const ul = document.querySelectorAll(".ul-menu");
+  const ulList = document.querySelector(".ul-menu");
+  
+  if (ulList.classList.contains("open")) {
+    for (i = 0; i < ul.length; ++i) {
+      console.log(ul[i]);
+      ul[i].classList.remove("open");
+    }
     console.log(ul);
   } else {
-    ul.classList.add("open");
+    for (i = 0; i < ul.length; ++i) {
+      ul[i].classList.add("open");
+    }
+    console.log(ul);
   }
 }

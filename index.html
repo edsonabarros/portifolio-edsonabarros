@@ -15,24 +15,27 @@
   <body>
     <!-- HEADER -->
     <header class="header">
-      <nav class="header-nav">
-        <ul class="header-ul" id="menu-hamb">
+      <nav class="header-nav ">
+       <ul >
           <li class="header-li" id="name">
             <a href="#"> edsonabarros</a>
           </li>
+        </ul>
+        <ul class="ul-menu header-ul" id="menu-hamb">
+<!--         <li class="header-li" id="name">
+            <a href="#"> edsonabarros</a>
+          </li> -->
           <li class="header-li li-top-menu page-hello">
-            <a href="#hello" class="mobile"> _hello</a>
+            <a href="#hello" onclick="menuHamburger()" > _hello</a>
           </li>
           <li class="header-li li-top-menu">
-            <a href="#sobre-mim" class="mobile"> _sobre-mim</a>
+            <a href="#sobre-mim" onclick="menuHamburger()" > _sobre-mim</a>
           </li>
-          <li class="header-li li-top-menu"><a href="#projeto" class="mobile">_projetos</a></li>
-          
-        </ul>
-        <ul>
-          <li class="li-contact li-top-menu"">
-            <a href="#contato" class="mobile" >_contato</a>
-
+          <li class="header-li li-top-menu ">
+            <a href="#projeto" onclick="menuHamburger()" >_projetos</a>
+          </li>
+          <li class="header-li li-top-menu teste">
+            <a href="#contato" onclick="menuHamburger()" >_contato</a>
           </li>
         </ul>
         <a class="icon-menu" onclick="menuHamburger()">
